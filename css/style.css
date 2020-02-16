@@ -1,0 +1,610 @@
+/*http://tool.chinaz.com/Tools/CssFormat.aspx*/
+* {
+	margin: 0;
+	padding: 0
+}
+
+html {
+	height: 100%
+}
+
+body {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
+	background-color: #f3f3f3;
+	color: #666;
+	font-size: 9pt;
+	font-family: arial,Microsoft Yahei,Hiragino Sans GB,sans-serif;
+	line-height: 20px;
+	-webkit-text-size-adjust: none
+}
+
+:focus {
+	-moz-outline-style: none
+}
+
+a img,img {
+	border: 0
+}
+
+ul li {
+	list-style: none
+}
+
+.clear {
+	clear: both
+}
+
+a {
+	outline: 0;
+	color: #333;
+	text-decoration: none
+}
+
+a:hover {
+	color: #ec8526;
+	text-decoration: underline
+}
+
+.wrapper {
+	padding-top: 20px;
+	padding-bottom: 15pt;
+	width: auto;
+	margin: 0 15% 0 15%;
+	min-width: 60pc;
+}
+
+#sys-update {
+	background-color: #FFFF00;
+    text-align: center;
+}
+
+#header {
+	margin-bottom: 0;
+	height: 50px;
+	background: #5b5a5a;
+	background: rgba(0,0,0,.67);
+	color: #999;
+	font-weight: 700;
+	line-height: 50px
+}
+
+#header .hdrl {
+	float: left;
+	width: 20%;
+	height: 50px
+}
+
+#header .hdrr {
+	float: right;
+	width: 20%;
+	height: 50px
+}
+
+#header a {
+	text-decoration: none;
+	font-family: arial,Microsoft Yahei,Hiragino Sans GB,sans-serif
+}
+
+#header a,#header a:hover {
+	color: #fff
+}
+
+#header h1 {
+	float: left;
+	margin-right: 5pc;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 18px;
+	font-family: arial,Microsoft Yahei,Hiragino Sans GB,sans-serif
+}
+
+#header h1 a {
+	color: #fff
+}
+
+#header h1 a:hover {
+	color: #008ee8
+}
+
+#header .menu {
+	float: right;
+	font-size: 13px;
+	line-height: 4.5
+}
+
+#header .menu .child-site {	
+	float: left;
+    margin-right: 50px;
+}
+
+#header .menu a {
+	font-weight: 400
+}
+
+#header .menu a,#header .menu a:hover {
+	text-decoration: none
+}
+
+.block {
+	clear: both;
+	margin-bottom: 10px;
+	padding-bottom: 1px;
+	/*background: #fff url(../images/bnd.gif) bottom center repeat-x*/
+	background: #fff url("http://cdn.yurixu.com/bnd.gif") bottom center repeat-x
+}
+
+.block .block_head {
+	overflow: hidden;
+	height: 54px;
+	border-right: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	/*background: url(../images/bhead.gif) 0 0 repeat-x;*/
+	background: url("http://cdn.yurixu.com/bhead.gif") 0 0 repeat-x;
+	line-height: 54px
+}
+
+.block .block_head h2 {
+	float: left;
+	color: #555;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 0 #fff;
+	font-weight: 400;
+	font-size: 18px;
+	font-family: Titillium999,Trebuchet MS,Arial,sans-serif
+}
+
+.block .block_head ul {
+	float: left;
+	text-transform: uppercase;
+	font-size: 1pc
+}
+
+.block .block_head ul li {
+	float: left;
+	padding-right: 15px;
+	padding-left: 20px
+}
+
+.li-select {
+	background-color: #5b5a5a!important
+}
+
+.a-select {
+	color: #fff!important
+}
+
+.block .block_head ul li a {
+	outline: 0;
+	color: #666;
+	text-decoration: none
+}
+
+.block .block_head ul li.active a {
+	color: #888
+}
+
+.block .block_head ul li a:hover {
+	color: #008ee8
+}
+
+.block .block_head select {
+	text-transform: none
+}
+
+.block .block_content {
+	overflow: hidden;
+	padding: 10px 20px;
+	border-right: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	background: #fff
+}
+
+.block table {
+	margin-bottom: 15px;
+	text-align: left
+}
+
+.block table tr.even td {
+	background: #fbfbfb
+}
+
+.block table tr td,.block table tr th {
+	padding: 10px;
+	border-bottom: 1px solid #ddd;
+	text-align: left;
+	line-height: normal
+}
+
+.block .hr0 {
+	height: 1px;
+	border: 0;
+	border-top: 1px dashed #1e90ff
+}
+
+.block .hr1 {
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #000
+}
+
+.block .hr2 {
+	height: 3px;
+	border: 0;
+	border-top: 3px double #6b8e23
+}
+
+.block .hr3 {
+	height: 5px;
+	border: 0;
+	border-top: 5px ridge #45d6d8
+}
+
+.block .hr4,.block .hr5 {
+	height: 10px;
+	border: 0;
+	border-top: 10px groove #ff8c00
+}
+
+#footer {
+	position: absolute;
+	bottom: 0;
+	clear: both;
+	overflow: hidden;
+	/*margin: 0 auto;*/
+	width: 70%;
+	/*height: 75pt;*/
+	min-width: 60pc;
+	background-color: #f3f3f3;
+	color: #757575;
+	font-size: 10px
+}
+
+#footer a {
+	color: #757575;
+	text-decoration: none
+}
+
+#footer a:hover {
+	color: #666;
+	text-decoration: none
+}
+
+#footer .left {
+	width: 30%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	text-align: left;
+}
+
+#footer .center {
+	width: 40%;
+	margin: 0 30% 0 30%;
+	min-width: 10pc;
+	/* background: green; */
+	text-align: center;
+}
+
+#footer .right {
+	text-align: right;
+	width: 30%;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.text-small {
+margin-right: 10px;
+padding: 7px;
+width: 450px;
+outline: 0;
+border: 1px solid #bbb;
+border-radius: 3px;
+background: #fefefe;
+color: #333;
+vertical-align: middle;
+font-size: 14px;
+font-family: arial,Microsoft Yahei,Hiragino Sans GB,sans-serif
+}
+
+::-webkit-input-placeholder {
+font-size: 13px
+}
+
+.submit-small {
+margin-right: 10px;
+width: 85px;
+height: 30px;
+border: 1px solid #aa4741;
+border-radius: 2px;
+background: #c7524b;
+color: #fff;
+vertical-align: middle;
+text-transform: uppercase;
+text-shadow: 1px 1px 0 #0a5482;
+font-weight: 400;
+font-size: 15px;
+line-height: 30px;
+cursor: pointer
+}
+
+#filter {
+margin-right: auto;
+margin-left: auto;
+height: auto;
+font-size: 9pt
+}
+
+#filter dl {
+clear: both;
+margin-top: 0;
+margin-bottom: 0;
+padding: 0;
+padding: 4px 0
+}
+
+#filter dt,dd {
+float: left;
+display: block;
+margin: 3px 0;
+padding: 0;
+width: auto
+}
+
+#filter dt {
+padding-bottom: 4px;
+height: 14px;
+color: #333;
+font-weight: 700
+}
+
+#filter dd {
+margin-right: 8px;
+color: #005aa0
+}
+
+#filter .sub-option-list {
+float: left;
+clear: both;
+margin: 5px 0;
+padding: 6px 9pt;
+width: 890px;
+border: 1px solid #ddd;
+border-radius: 3px;
+background-color: #fbfbfb;
+line-height: 20px
+}
+
+#filter .option-list a {
+display: inline-block;
+padding: 2px 4px;
+cursor: pointer
+}
+
+#filter .option-list a:hover {
+color: #ec8526;
+text-decoration: underline
+}
+
+/* #filter .option-list a:visited {
+color: #845482;
+text-decoration: underline
+} */
+
+.dl-lst dt {
+	float: left;
+	margin-right: 6px;
+	height: 27px;
+	font-weight: 700;
+	font-size: 9pt;
+	line-height: 27px
+}
+
+.select {
+	color: #00a9fa
+}
+
+#table {
+	overflow: hidden;
+	margin: 0;
+	padding: 10px 20px 5px;
+	border-top: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-radius: 0!important;
+	background: #fff;
+	table-layout: fixed
+}
+
+#table th,#table tr td {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: 13px;
+	font-family: Hiragino Sans GB,微软雅黑,Microsoft YaHei,SimHei,Tahoma,宋体b8b体,SimSun,sans-serif;
+	-moz-text-overflow: ellipsis
+}
+
+#table th {
+	padding-top: 2px;
+	font-weight: 400
+}
+
+#table td:first-child {
+	padding-left: 20px
+}
+
+#table th:first-child {
+	padding-left: 10px
+}
+
+#table a {
+	color: #008ee8
+}
+
+#table a:visited {
+    color: #845482
+}
+
+.fixed-table-container {
+	position: relative;
+	clear: both;
+	border: 0 solid #ccc;
+	border-radius: 0
+}
+
+.pagination-detail {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 20px
+}
+
+.clearfix,.fixed-table-pagination {
+	border-right: 1px solid #ccc;
+	border-left: 1px solid #ccc
+}
+
+.pagination {
+	margin-right: 20px
+}
+
+.block-footer,.hd-menu {
+	margin: 0 auto;
+	width: 70%;
+	min-width: 60pc;
+	margin-left: 15%;
+}
+
+.block-footer {
+	clear: both;
+	margin-bottom: 10px;
+	/*padding-top: 20px;*/
+	padding-bottom: 1px
+}
+
+.block-table {
+	min-height: 180px
+}
+
+.block .log {
+	margin-top: 40px;
+	padding-top: 50px;
+	background-color: #fff;
+	box-shadow: #777 0 0 3px
+}
+
+.log {
+	padding: 30px 50px;
+	min-height: 710px
+}
+
+.log ol {
+	padding-left: 25px
+}
+
+.log li {
+	padding-left: 5px;
+	color: gray;
+	font-size: 13px;
+	line-height: 25px;
+}
+
+.log h5 {
+	padding-top: 5px;
+	padding-left: 10px;
+	line-height: 25px;
+}
+.donate {
+	padding-left: 10px;
+    font-size: 13px;
+    line-height: 25px;
+}
+
+#uyan_frame {
+	margin: 200px 5px 0
+}
+
+#busuanzi_container_site_pv {
+	margin-right: 10px
+}
+
+@media screen and (max-width:1366px) {
+	.wrapper {
+		padding-bottom: 75pt
+	}
+
+	.block-footer,.wrapper {
+		margin: 0 auto;
+		/*padding-top: 20px;*/
+		width: 70%;
+		min-width: 60pc
+	}
+
+	.block-footer {
+		clear: both;
+		margin-bottom: 10px;
+		padding-bottom: 1px
+	}
+
+	#footer {
+		position: absolute;
+		/*bottom: 0;*/
+		clear: both;
+		overflow: hidden;
+		/*height: 75pt;*/
+		background-color: #f3f3f3;
+		color: #757575;
+		font-size: 10px
+	}
+
+	#footer,.hd-menu {
+		margin: 0 auto;
+		width: 70%;
+		min-width: 60pc
+	}
+}
+
+.wrapper-left {
+	width:15%;
+	height:100%;
+	position: absolute;
+	padding-top: 20px;
+	padding-bottom: 75pt;
+	margin-top: 50px;
+	left:0;
+	top:0;
+}
+
+.wrapper-right {
+	width:15%;
+	height:100%;
+	position: absolute;
+	padding-top: 20px;
+	padding-bottom: 75pt;
+	margin-top: 50px;
+	right:0;
+	top:0;
+}
+
+.wrapper-right .ad{
+	width: 70%;
+	height: auto;
+	padding-top:120px;
+}
+
+.wrapper-right .ad img{
+	width:auto;
+	height:auto;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+#busuanzi_value_site_pv,#busuanzi_value_site_uv {
+	color: #337ab7
+}
