@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>标签管理 - 鹅毛啤酒辞典</title>
+    <link rel="stylesheet" href="/admin-styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>标签管理</h1>
+            <nav class="admin-nav">
+                <a href="/admin.html">术语管理</a>
+                <a href="/admin-tags.html" class="active">标签管理</a>
+            </nav>
+        </header>
+
+        <main>
+            <div class="tags-panel">
+                <div class="tags-list">
+                    <h2>现有标签</h2>
+                    <div class="tags-container" id="tagsContainer">
+                        <!-- 标签将通过JS动态生成 -->
+                    </div>
+                </div>
+
+                <div class="tag-editor">
+                    <h2>添加/编辑标签</h2>
+                    <form id="tagForm">
+                        <div class="form-group">
+                            <label for="tagName">标签名称</label>
+                            <input type="text" id="tagName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="tagCategory">标签分类</label>
+                            <select id="tagCategory" required>
+                                <option value="history">历史文化</option>
+                                <option value="ingredient">原料</option>
+                                <option value="process">工艺</option>
+                                <option value="style">风格</option>
+                                <option value="service">服务</option>
+                                <option value="quality">品质</option>
+                            </select>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" id="saveTagBtn">保存标签</button>
+                            <button type="button" id="cancelTagBtn">取消</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="/admin-tags.js"></script>
+</body>
+</html> 

@@ -599,4 +599,162 @@ button:disabled {
     justify-content: space-between;
     align-items: flex-start;
     gap: 15px;
+}
+
+/* 添加标签管理相关样式 */
+.tags-panel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.tags-list,
+.tag-editor {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.tag-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    background: #f5f6fa;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+}
+
+.tag-item:hover {
+    background: #e8e9ec;
+    transform: translateY(-1px);
+}
+
+.tag-item.selected {
+    background: #fff;
+    border-color: var(--primary-color);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.tag-item .tag-delete {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.tag-item .tag-delete:hover {
+    background: rgba(0,0,0,0.2);
+}
+
+.tag-category {
+    margin-top: 20px;
+}
+
+.tag-category h3 {
+    font-size: 16px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+@media (max-width: 768px) {
+    .tags-panel {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* 表单操作按钮样式 */
+.form-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.form-actions button {
+    flex: 1;
+}
+
+#cancelTagBtn {
+    background: #f5f5f5;
+    color: var(--text-color);
+}
+
+#cancelTagBtn:hover {
+    background: #e0e0e0;
+}
+
+.tag-category-label {
+    font-size: 12px;
+    color: #666;
+    background: rgba(0,0,0,0.05);
+    padding: 2px 8px;
+    border-radius: 10px;
+}
+
+.tag-count {
+    color: #666;
+    font-size: 12px;
+}
+
+/* 导入进度对话框样式 */
+.import-progress-dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.progress-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+    width: 90%;
+    max-width: 400px;
+}
+
+.progress-bar {
+    height: 8px;
+    background: #eee;
+    border-radius: 4px;
+    margin: 15px 0;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: var(--primary-color);
+    width: 0;
+    transition: width 0.3s ease;
+}
+
+.progress-stats {
+    display: flex;
+    justify-content: space-between;
+    color: #666;
+    font-size: 14px;
 } 

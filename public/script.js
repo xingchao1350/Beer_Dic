@@ -165,8 +165,8 @@ function filterTerms() {
     // 应用搜索过滤
     return allTerms.filter(term => {
         return searchText === '' || 
-               term.en.toLowerCase().includes(searchText) || 
-               term.cn.includes(searchText);
+                            term.en.toLowerCase().includes(searchText) || 
+                            term.cn.includes(searchText);
     });
 }
 
@@ -179,10 +179,10 @@ async function showTermDetail(term) {
     termDetailContainer.innerHTML = `
         <div class="term-header">
             <div class="term-header-content">
-                <h2 class="term-title">
-                    <div class="term-title-cn">${term.cn}</div>
-                    <div class="term-title-en">${term.en}</div>
-                </h2>
+            <h2 class="term-title">
+                <div class="term-title-cn">${term.cn}</div>
+                <div class="term-title-en">${term.en}</div>
+            </h2>
                 <button class="share-btn" onclick="shareTermDetail('${term.en}')" title="分享">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/>

@@ -189,6 +189,25 @@ app.get('/translate', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'translate.html'));
 });
 
+// 添加保存分类数据的路由
+app.post('/api/save-categories', async (req, res) => {
+    try {
+        const data = req.body;
+        const filePath = path.join(__dirname, 'public', 'beer_categories.json');
+        
+        // 保存数据到文件
+        await fs.writeFile(filePath, JSON.stringify(data, null, 2), 'utf8');
+        
+        res.json({ success: true });
+    } catch (error) {
+        console.error('保存数据失败:', error);
+        res.status(500).json({ 
+            error: '保存数据失败',
+            details: error.message 
+        });
+    }
+});
+
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);

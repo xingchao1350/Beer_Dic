@@ -1099,6 +1099,1156 @@
             "evaluation",
             "texture"
           ]
+        },
+        {
+          "en": "American Light Lager",
+          "cn": "美式淡爽拉格",
+          "ipa": "/əˈmerɪkən laɪt ˈlɑːɡər/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "American Lager",
+          "cn": "美式拉格",
+          "ipa": "/əˈmerɪkən ˈlɑːɡər/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Cream Ale",
+          "cn": "奶油艾尔",
+          "ipa": "/kriːm eɪl/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "American Wheat Beer",
+          "cn": "美式小麦啤",
+          "ipa": "/əˈmerɪkən wiːt bɪər/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "International Pale Lager",
+          "cn": "国际淡色拉格",
+          "ipa": "/ˌɪntərˈnæʃənəl peɪl ˈlɑːɡər/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "International Amber Lager",
+          "cn": "国际琥珀拉格",
+          "ipa": "/ˌɪntərˈnæʃənəl ˈæmbər ˈlɑːɡər/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "International Dark Lager",
+          "cn": "国际深色拉格",
+          "ipa": "/ˌɪntərˈnæʃənəl dɑːrk ˈlɑːɡər/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Czech Pale Lager",
+          "cn": "捷克淡色拉格",
+          "ipa": "/tʃek peɪl ˈlɑːɡər/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Czech Premium Pale Lager",
+          "cn": "捷克优质淡色拉格",
+          "ipa": "/tʃek ˈpriːmiəm peɪl ˈlɑːɡər/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Czech Amber Lager",
+          "cn": "捷克琥珀拉格",
+          "ipa": "/tʃek ˈæmbər ˈlɑːɡər/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Czech Dark Lager",
+          "cn": "捷克深色拉格",
+          "ipa": "/tʃek dɑːrk ˈlɑːɡər/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Munich Helles",
+          "cn": "慕尼黑清亮啤酒",
+          "ipa": "/ˈmjuːnɪk ˈheləs/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Festbier",
+          "cn": "节日啤酒",
+          "ipa": "/ˈfestbɪər/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Helles Bock",
+          "cn": "清亮博克",
+          "ipa": "/ˈheləs bɒk/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "German Leichtbier",
+          "cn": "德式低度啤酒",
+          "ipa": "/ˈdʒɜːrmən ˈlaɪktbɪər/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Kölsch",
+          "cn": "科隆啤酒",
+          "ipa": "/kœlʃ/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "German Helles Exportbier",
+          "cn": "德式清亮出口啤酒",
+          "ipa": "/ˈdʒɜːrmən ˈheləs ˈekspɔːrtbɪər/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "German Pils",
+          "cn": "德式皮尔森",
+          "ipa": "/ˈdʒɜːrmən pɪlz/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Märzen",
+          "cn": "三月啤酒",
+          "ipa": "/ˈmɛərtsən/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Rauchbier",
+          "cn": "烟熏啤酒",
+          "ipa": "/ˈraʊxbɪər/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Dunkles Bock",
+          "cn": "深色博克",
+          "ipa": "/ˈdʊŋkləs bɒk/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Vienna Lager",
+          "cn": "维也纳拉格",
+          "ipa": "/viˈenə ˈlɑːɡər/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Altbier",
+          "cn": "德国老式啤酒",
+          "ipa": "/ˈaltbɪər/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Kellerbier",
+          "cn": "地窖啤酒",
+          "ipa": "/ˈkelərbɪər/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Pale Kellerbier",
+          "cn": "淡色地窖啤酒",
+          "ipa": "/peɪl ˈkelərbɪər/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Amber Kellerbier",
+          "cn": "琥珀地窖啤酒",
+          "ipa": "/ˈæmbər ˈkelərbɪər/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Munich Dunkel",
+          "cn": "慕尼黑深色啤酒",
+          "ipa": "/ˈmjuːnɪk ˈdʊŋkəl/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Schwarzbier",
+          "cn": "德式黑啤",
+          "ipa": "/ˈʃvartsbɪər/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Doppelbock",
+          "cn": "双料博克",
+          "ipa": "/ˈdɒpəlbɒk/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Eisbock",
+          "cn": "冰馏博克",
+          "ipa": "/ˈaɪsbɒk/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Baltic Porter",
+          "cn": "波罗的海波特",
+          "ipa": "/ˈbɔːltɪk ˈpɔːrtər/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Weissbier",
+          "cn": "德式小麦啤",
+          "ipa": "/ˈvaɪsbɪər/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Dunkles Weissbier",
+          "cn": "德式深色小麦啤",
+          "ipa": "/ˈdʊŋkləs ˈvaɪsbɪər/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Weizenbock",
+          "cn": "小麦博克",
+          "ipa": "/ˈvaɪtsənbɒk/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Ordinary Bitter",
+          "cn": "普通苦啤",
+          "ipa": "/ˈɔːrdɪnəri ˈbɪtər/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Best Bitter",
+          "cn": "最苦啤",
+          "ipa": "/best ˈbɪtər/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Strong Bitter",
+          "cn": "烈性苦啤",
+          "ipa": "/strɒŋ ˈbɪtər/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "British Golden Ale",
+          "cn": "英式金色艾尔",
+          "ipa": "/ˈbrɪtɪʃ ˈɡəʊldən eɪl/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Australian Sparkling Ale",
+          "cn": "澳洲起泡艾尔",
+          "ipa": "/ɒˈstreɪliən ˈspɑːklɪŋ eɪl/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "English IPA",
+          "cn": "英式IPA",
+          "ipa": "/ˈɪŋɡlɪʃ aɪ piː eɪ/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Dark Mild",
+          "cn": "深色淡味啤酒",
+          "ipa": "/dɑːk maɪld/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "British Brown Ale",
+          "cn": "英式棕色艾尔",
+          "ipa": "/ˈbrɪtɪʃ braʊn eɪl/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "English Porter",
+          "cn": "英式波特",
+          "ipa": "/ˈɪŋɡlɪʃ ˈpɔːrtər/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Scottish Light",
+          "cn": "苏格兰淡啤",
+          "ipa": "/ˈskɒtɪʃ laɪt/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Scottish Heavy",
+          "cn": "苏格兰高度啤酒",
+          "ipa": "/ˈskɒtɪʃ ˈhevi/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Scottish Export",
+          "cn": "苏格兰出口啤酒",
+          "ipa": "/ˈskɒtɪʃ ˈekspɔːt/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Irish Red Ale",
+          "cn": "爱尔兰红色艾尔",
+          "ipa": "/ˈaɪrɪʃ red eɪl/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Irish Stout",
+          "cn": "爱尔兰世涛",
+          "ipa": "/ˈaɪrɪʃ staʊt/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Irish Extra Stout",
+          "cn": "爱尔兰浓世涛",
+          "ipa": "/ˈaɪrɪʃ ˈekstrə staʊt/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Sweet Stout",
+          "cn": "甜世涛",
+          "ipa": "/swiːt staʊt/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Oatmeal Stout",
+          "cn": "燕麦世涛",
+          "ipa": "/ˈəʊtmiːl staʊt/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Tropical Stout",
+          "cn": "热带世涛",
+          "ipa": "/ˈtrɒpɪkəl staʊt/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Foreign Extra Stout",
+          "cn": "出口增料世涛",
+          "ipa": "/ˈfɒrən ˈekstrə staʊt/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "British Strong Ale",
+          "cn": "英式烈性艾尔",
+          "ipa": "/ˈbrɪtɪʃ strɒŋ eɪl/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Old Ale",
+          "cn": "陈酿艾尔",
+          "ipa": "/əʊld eɪl/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Wee Heavy",
+          "cn": "苏格兰烈啤",
+          "ipa": "/wiː ˈhevi/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "English Barleywine",
+          "cn": "英式大麦酒",
+          "ipa": "/ˈɪŋɡlɪʃ ˈbɑːliwaɪn/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Blonde Ale",
+          "cn": "金色艾尔",
+          "ipa": "/blɒnd eɪl/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "American Pale Ale",
+          "cn": "美式淡色艾尔",
+          "ipa": "/əˈmerɪkən peɪl eɪl/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "American Amber Ale",
+          "cn": "美式琥珀艾尔",
+          "ipa": "/əˈmerɪkən ˈæmbər eɪl/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "California Common",
+          "cn": "加州蒸汽啤酒",
+          "ipa": "/ˌkælɪˈfɔːrniə ˈkɒmən/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "American Brown Ale",
+          "cn": "美式棕色艾尔",
+          "ipa": "/əˈmerɪkən braʊn eɪl/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "American Porter",
+          "cn": "美式波特",
+          "ipa": "/əˈmerɪkən ˈpɔːrtər/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "American Stout",
+          "cn": "美式世涛",
+          "ipa": "/əˈmerɪkən staʊt/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Imperial Stout",
+          "cn": "帝国世涛",
+          "ipa": "/ɪmˈpɪəriəl staʊt/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "American IPA",
+          "cn": "美式IPA",
+          "ipa": "/əˈmerɪkən aɪ piː eɪ/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Specialty IPA",
+          "cn": "特种IPA",
+          "ipa": "/ˈspeʃəlti aɪ piː eɪ/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Double IPA",
+          "cn": "双料IPA",
+          "ipa": "/ˈdʌbəl aɪ piː eɪ/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "American Strong Ale",
+          "cn": "美式烈性艾尔",
+          "ipa": "/əˈmerɪkən strɒŋ eɪl/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "American Barleywine",
+          "cn": "美式大麦酒",
+          "ipa": "/əˈmerɪkən ˈbɑːliwaɪn/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Wheatwine",
+          "cn": "小麦烈酒",
+          "ipa": "/wiːt waɪn/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Berliner Weisse",
+          "cn": "柏林小麦啤酒",
+          "ipa": "/bərˈliːnər ˈvaɪsə/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Flanders Red Ale",
+          "cn": "法兰德斯红色艾尔",
+          "ipa": "/ˈflɑːndərz red eɪl/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Oud Bruin",
+          "cn": "老棕色艾尔",
+          "ipa": "/aʊd bruːn/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Lambic",
+          "cn": "兰比克",
+          "ipa": "/ˈlæmbɪk/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Gueuze",
+          "cn": "贵兹",
+          "ipa": "/ɡøːz/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Fruit Lambic",
+          "cn": "水果兰比克",
+          "ipa": "/fruːt ˈlæmbɪk/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Witbier",
+          "cn": "比利时小麦啤",
+          "ipa": "/ˈvɪtbɪər/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Belgian Pale Ale",
+          "cn": "比利时淡色艾尔",
+          "ipa": "/ˈbeldʒən peɪl eɪl/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Bière de Garde",
+          "cn": "北法风格窖藏啤酒",
+          "ipa": "/biˈɛr də ɡard/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Belgian Golden Strong Ale",
+          "cn": "比利时金色艾尔",
+          "ipa": "/ˈbeldʒən ˈɡəʊldən strɒŋ eɪl/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Saison",
+          "cn": "季节啤酒-赛松",
+          "ipa": "/seɪˈzɒn/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Golden Strong Ale",
+          "cn": "金色烈性艾尔",
+          "ipa": "/ˈɡəʊldən strɒŋ eɪl/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Trappist Single",
+          "cn": "特拉啤斯单料",
+          "ipa": "/ˈtræpɪst ˈsɪŋɡəl/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Belgian Dubbel",
+          "cn": "比利时双料",
+          "ipa": "/ˈbeldʒən ˈdʌbəl/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Belgian Tripel",
+          "cn": "比利时三料",
+          "ipa": "/ˈbeldʒən ˈtrɪpəl/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Gose",
+          "cn": "古斯",
+          "ipa": "/ˈɡoʊzə/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Kentucky Common",
+          "cn": "肯塔基啤酒",
+          "ipa": "/kənˈtʌki ˈkɒmən/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Lichtenhainer",
+          "cn": "烟熏酸艾",
+          "ipa": "/ˈlɪçtənhaɪnər/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "London Brown Ale",
+          "cn": "伦敦棕色艾尔",
+          "ipa": "/ˈlʌndən braʊn eɪl/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Piwo Grodziskie",
+          "cn": "波兰烟熏啤酒",
+          "ipa": "/ˈpiːvɔ ɡrɔˈdʒiskjə/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Pre-Prohibition Lager",
+          "cn": "禁酒令前拉格",
+          "ipa": "/priː prəʊhɪˈbɪʃən ˈlɑːɡər/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Pre-Prohibition Porter",
+          "cn": "禁酒令前波特",
+          "ipa": "/priː prəʊhɪˈbɪʃən ˈpɔːrtər/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Roggenbier",
+          "cn": "黑麦啤酒",
+          "ipa": "/ˈrɒɡənbɪər/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Sahti",
+          "cn": "芬兰节日啤酒",
+          "ipa": "/ˈsɑːti/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "American Wild Ale",
+          "cn": "美式野菌啤酒",
+          "ipa": "/əˈmerɪkən waɪld eɪl/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Brett Beer",
+          "cn": "布雷特啤酒",
+          "ipa": "/bret bɪər/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Mixed-Fermentation Sour Beer",
+          "cn": "混合发酵酸啤酒",
+          "ipa": "/mɪkst ˌfɜːmənˈteɪʃən ˈsaʊər bɪər/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Wild Specialty Beer",
+          "cn": "野菌特种啤酒",
+          "ipa": "/waɪld ˈspeʃəlti bɪər/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Fruit Beer",
+          "cn": "水果啤酒",
+          "ipa": "/fruːt bɪər/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Fruit and Spice Beer",
+          "cn": "水果香料啤酒",
+          "ipa": "/fruːt ænd spaɪs bɪər/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Specialty Fruit Beer",
+          "cn": "特种水果啤酒",
+          "ipa": "/ˈspeʃəlti fruːt bɪər/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Spice Herb or Vegetable Beer",
+          "cn": "香料、草本或蔬菜啤酒",
+          "ipa": "/spaɪs hɜːb ɔː ˈvedʒtəbəl bɪər/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Autumn Seasonal Beer",
+          "cn": "秋季季节啤酒",
+          "ipa": "/ˈɔːtəm ˈsiːzənəl bɪər/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Winter Seasonal Beer",
+          "cn": "冬季季节啤酒",
+          "ipa": "/ˈwɪntər ˈsiːzənəl bɪər/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Alternative Grain Beer",
+          "cn": "另类谷物啤酒",
+          "ipa": "/ɔːlˈtɜːnətɪv ɡreɪn bɪər/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Alternative Sugar Beer",
+          "cn": "另类糖类啤酒",
+          "ipa": "/ɔːlˈtɜːnətɪv ˈʃʊɡər bɪər/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "SMOKED BEER",
+          "cn": "烟熏啤酒",
+          "ipa": "/sməʊkt bɪər/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Classic Style Smoked Beer",
+          "cn": "经典烟熏啤酒",
+          "ipa": "/ˈklæsɪk staɪl sməʊkt bɪər/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Specialty Smoked Beer",
+          "cn": "特种烟熏啤酒",
+          "ipa": "/ˈspeʃəlti sməʊkt bɪər/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Wood-Aged Beer",
+          "cn": "木桶陈酿啤酒",
+          "ipa": "/wʊd eɪdʒd bɪər/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Specialty Wood-Aged Beer",
+          "cn": "特种木桶陈酿啤酒",
+          "ipa": "/ˈspeʃəlti wʊd eɪdʒd bɪər/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Mixed-Style Beer",
+          "cn": "混合风格啤酒",
+          "ipa": "/mɪkst staɪl bɪər/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Experimental Beer",
+          "cn": "实验啤酒",
+          "ipa": "/ɪkˈsperɪmentəl bɪər/",
+          "description": "BJCP啤酒风格",
+          "tags": [
+            "style",
+            "BJCP"
+          ]
+        },
+        {
+          "en": "Belgian Dark Strong Ale",
+          "cn": "比利时深色烈性艾尔",
+          "ipa": "/belgaɪæn dɑːrk stroʊŋ eɪl/",
+          "tags": [
+            "style",
+            "BJCP"
+          ],
+          "description": "BJCP啤酒风格"
         }
       ]
     },

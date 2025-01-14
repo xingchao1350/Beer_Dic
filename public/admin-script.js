@@ -521,47 +521,299 @@ function setupImportFeatures() {
         fileInput.click();
     });
     
-    fileInput.addEventListener('change', handleFileSelect);
+    fileInput.addEventListener('change', handleCsvImport);
 }
 
-// 处理文件选择
-async function handleFileSelect(event) {
+// 修改 CSV 格式验证函数
+function validateCsvHeader(header) {
+    const requiredColumns = [
+        'category_key',
+        'category_en',
+        'category_cn',
+        'term_en',
+        'term_cn',
+        'term_ipa',
+        'term_description',
+        'term_tags'
+    ];
+    
+    // 清理和标准化表头
+    let headerColumns = header
+        .toLowerCase()
+        .replace(/[\r\n"]/g, '') // 移除换行符和引号
+        .split(',')
+        .map(col => col.trim());
+    
+    // 标准化列名
+    headerColumns = headerColumns.map(col => {
+        // 移除特殊字符
+        col = col.replace(/[^a-z0-9_]/g, '');
+        // 常见的别名映射
+        const columnAliases = {
+            'key': 'category_key',
+            'categorykey': 'category_key',
+            'caten': 'category_en',
+            'categoryen': 'category_en',
+            'catcn': 'category_cn',
+            'categorycn': 'category_cn',
+            'en': 'term_en',
+            'termen': 'term_en',
+            'english': 'term_en',
+            'cn': 'term_cn',
+            'termcn': 'term_cn',
+            'chinese': 'term_cn',
+            'ipa': 'term_ipa',
+            'pronunciation': 'term_ipa',
+            'description': 'term_description',
+            'desc': 'term_description',
+            'tags': 'term_tags',
+            'tag': 'term_tags'
+        };
+        return columnAliases[col] || col;
+    });
+
+    // 检查必需列
+    const missingColumns = requiredColumns.filter(col => !headerColumns.includes(col));
+    
+    if (missingColumns.length > 0) {
+        alert(`CSV文件缺少以下必需列：\n${missingColumns.join('\n')}\n\n当前列：${headerColumns.join(', ')}`);
+        return false;
+    }
+    
+    return true;
+}
+
+// 修改 CSV 导入函数
+async function handleCsvImport(event) {
     const file = event.target.files[0];
     if (!file) return;
-    
+
+    // 检查文件类型
+    if (!file.name.toLowerCase().endsWith('.csv')) {
+        alert('请上传 CSV 格式的文件');
+        event.target.value = '';
+        return;
+    }
+
     try {
         const text = await file.text();
-        const records = parseCSV(text);
-        await importRecords(records);
+        // 处理不同的换行符和编码问题
+        const cleanedText = text
+            .replace(/^\uFEFF/, '') // 移除 BOM
+            .replace(/\r\n/g, '\n') // 统一换行符
+            .replace(/\r/g, '\n');
+        
+        const rows = cleanedText.split('\n').filter(row => row.trim());
+        
+        if (rows.length < 2) {
+            alert('CSV文件为空或格式不正确');
+            return;
+        }
+
+        // 验证表头
+        const header = rows[0];
+        if (!validateCsvHeader(header)) {
+            event.target.value = '';
+            return;
+        }
+
+        // 显示进度对话框
+        showImportProgress(rows.length - 1);
+
+        // 分批处理数据
+        const batchSize = 50;
+        const dataRows = rows.slice(1);
+        const totalBatches = Math.ceil(dataRows.length / batchSize);
+        let processedCount = 0;
+        let successCount = 0;
+        let errorCount = 0;
+        let errors = [];
+
+        // 分批处理
+        for (let i = 0; i < totalBatches; i++) {
+            const start = i * batchSize;
+            const end = Math.min(start + batchSize, dataRows.length);
+            const batch = dataRows.slice(start, end);
+
+            try {
+                await processCsvBatch(batch);
+                successCount += batch.length;
+            } catch (error) {
+                console.error('处理批次失败:', error);
+                errorCount += batch.length;
+                errors.push(`批次 ${i + 1} 处理失败: ${error.message}`);
+            }
+
+            processedCount += batch.length;
+            updateImportProgress(processedCount, dataRows.length, successCount, errorCount);
+            await new Promise(resolve => setTimeout(resolve, 50));
+        }
+
+        // 完成导入
+        hideImportProgress();
+        
+        // 显示详细结果
+        let resultMessage = `导入完成\n成功: ${successCount}\n失败: ${errorCount}`;
+        if (errors.length > 0) {
+            resultMessage += '\n\n错误详情:\n' + errors.slice(0, 5).join('\n');
+            if (errors.length > 5) {
+                resultMessage += `\n...还有 ${errors.length - 5} 个错误未显示`;
+            }
+        }
+        alert(resultMessage);
+
+        // 重新加载数据
+        await loadTermsData();
+        renderCategories();
+
     } catch (error) {
-        showImportResult('error', `导入失败: ${error.message}`);
+        console.error('CSV导入失败:', error);
+        hideImportProgress();
+        alert(`CSV导入失败: ${error.message}\n请检查文件格式是否正确`);
+    } finally {
+        event.target.value = '';
     }
-    
-    // 重置文件输入
-    event.target.value = '';
 }
 
-// 解析CSV文件
-function parseCSV(text) {
-    const lines = text.split('\n');
-    const headers = lines[0].trim().split(',');
-    const records = [];
+// 修改批处理函数
+async function processCsvBatch(rows) {
+    const processedData = {};
+    let retryCount = 0;
+    const MAX_RETRIES = 3;
     
-    for (let i = 1; i < lines.length; i++) {
-        const line = lines[i].trim();
-        if (!line) continue;
-        
-        const values = line.split(',');
-        const record = {};
-        
-        headers.forEach((header, index) => {
-            record[header.trim()] = values[index]?.trim() || '';
-        });
-        
-        records.push(record);
+    // 处理数据
+    for (const row of rows) {
+        try {
+            // 处理可能的引号包裹和特殊字符
+            const fields = row.split(',').map(field => {
+                field = field.trim();
+                // 移除引号
+                field = field.replace(/^["']|["']$/g, '').trim();
+                // 处理双引号转义
+                field = field.replace(/""/g, '"');
+                return field;
+            });
+
+            const [categoryKey, categoryEn, categoryCn, termEn, termCn, termIpa, termDescription, termTags] = fields;
+            
+            // 验证必填字段
+            if (!categoryKey || !categoryEn || !categoryCn || !termEn || !termCn) {
+                throw new Error('缺少必填字段');
+            }
+
+            // 标准化标签处理
+            const normalizedTags = termTags 
+                ? termTags
+                    .replace(/，/g, ',') // 替换中文逗号
+                    .replace(/、/g, ',') // 替换顿号
+                    .replace(/;/g, ',') // 替换分号
+                    .split(',')
+                    .map(tag => tag.trim())
+                    .filter(Boolean)
+                : [];
+
+            // 初始化分类
+            if (!processedData[categoryKey]) {
+                processedData[categoryKey] = {
+                    en: categoryEn,
+                    cn: categoryCn,
+                    terms: []
+                };
+            }
+
+            // 添加术语
+            processedData[categoryKey].terms.push({
+                en: termEn,
+                cn: termCn,
+                ipa: termIpa || '',
+                description: termDescription || '',
+                tags: normalizedTags
+            });
+        } catch (error) {
+            console.error('处理行数据失败:', row, error);
+            throw new Error(`处理行数据失败: ${error.message}`);
+        }
     }
-    
-    return records;
+
+    // 保存数据（带重试机制）
+    while (retryCount < MAX_RETRIES) {
+        try {
+            // 更新本地数据
+            for (const [categoryKey, categoryData] of Object.entries(processedData)) {
+                if (!categoriesData.categories[categoryKey]) {
+                    categoriesData.categories[categoryKey] = {
+                        en: categoryData.en,
+                        cn: categoryData.cn,
+                        terms: []
+                    };
+                }
+
+                // 合并术语
+                for (const term of categoryData.terms) {
+                    const existingTerm = categoriesData.categories[categoryKey].terms.find(t => 
+                        t.en.toLowerCase() === term.en.toLowerCase()
+                    );
+                    if (existingTerm) {
+                        Object.assign(existingTerm, term);
+                    } else {
+                        categoriesData.categories[categoryKey].terms.push(term);
+                    }
+                }
+            }
+
+            // 尝试保存
+            await saveTermsData();
+            return; // 保存成功，退出函数
+            
+        } catch (error) {
+            retryCount++;
+            if (retryCount >= MAX_RETRIES) {
+                throw new Error(`保存失败，已重试${MAX_RETRIES}次: ${error.message}`);
+            }
+            console.log(`保存失败，正在进行第${retryCount}次重试...`);
+            await new Promise(resolve => setTimeout(resolve, 1000 * retryCount)); // 延迟重试
+        }
+    }
+}
+
+// 显示导入进度对话框
+function showImportProgress(total) {
+    const dialog = document.createElement('div');
+    dialog.className = 'import-progress-dialog';
+    dialog.innerHTML = `
+        <div class="progress-content">
+            <h3>正在导入数据...</h3>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 0%"></div>
+            </div>
+            <div class="progress-stats">
+                <span>已处理: <span id="processedCount">0</span>/${total}</span>
+                <span>成功: <span id="successCount">0</span></span>
+                <span>失败: <span id="errorCount">0</span></span>
+            </div>
+        </div>
+    `;
+    document.body.appendChild(dialog);
+}
+
+// 更新进度显示
+function updateImportProgress(processed, total, success, error) {
+    const progress = (processed / total) * 100;
+    const progressFill = document.querySelector('.progress-fill');
+    const processedCount = document.getElementById('processedCount');
+    const successCount = document.getElementById('successCount');
+    const errorCount = document.getElementById('errorCount');
+
+    if (progressFill) progressFill.style.width = `${progress}%`;
+    if (processedCount) processedCount.textContent = processed;
+    if (successCount) successCount.textContent = success;
+    if (errorCount) errorCount.textContent = error;
+}
+
+// 隐藏进度对话框
+function hideImportProgress() {
+    const dialog = document.querySelector('.import-progress-dialog');
+    if (dialog) dialog.remove();
 }
 
 // 格式化分类键名
@@ -865,6 +1117,61 @@ function clearTagFilter() {
     if (!categoryKey) return;
     
     renderTermsList(categoryKey);
+}
+
+// 添加保存数据函数
+async function saveTermsData() {
+    try {
+        // 1. 先将数据保存到本地存储作为备份
+        localStorage.setItem('beer_categories_backup', JSON.stringify(categoriesData));
+        
+        // 2. 尝试保存到服务器
+        const response = await fetch('/api/save-categories', {  // 修改为正确的API端点
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(categoriesData)
+        });
+        
+        if (!response.ok) {
+            throw new Error('保存数据失败');
+        }
+        
+        // 3. 保存成功后更新界面
+        renderCategories();
+        renderCategorySelect();
+        
+        return true;
+    } catch (error) {
+        console.error('Error saving data:', error);
+        
+        // 4. 如果保存失败，尝试从本地存储恢复
+        const backup = localStorage.getItem('beer_categories_backup');
+        if (backup) {
+            try {
+                categoriesData = JSON.parse(backup);
+                console.log('已从本地存储恢复数据');
+            } catch (e) {
+                console.error('Error restoring from backup:', e);
+            }
+        }
+        
+        throw error;
+    }
+}
+
+// 修改 loadTermsData 函数名，使其与其他代码一致
+async function loadTermsData() {
+    try {
+        const response = await fetch('/beer_categories.json');
+        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+        categoriesData = await response.json();
+        renderCategories();
+    } catch (error) {
+        console.error('Error loading data:', error);
+        throw error;
+    }
 }
 
 // 启动应用
