@@ -1,0 +1,1824 @@
+{
+  "categories": {
+    "HISTORY_CULTURE": {
+      "en": "History & Culture",
+      "cn": "历史与文化",
+      "terms": [
+        {
+          "en": "Reinheitsgebot",
+          "cn": "德国纯净啤酒法",
+          "ipa": "/ˈraɪnhaɪtsɡəboʊt/",
+          "description": "1516年颁布的德国啤酒纯净法",
+          "tags": [
+            "history",
+            "regulation",
+            "german"
+          ]
+        },
+        {
+          "en": "Trappist brewery",
+          "cn": "特拉普派修道院啤酒厂",
+          "ipa": "/ˈtræpɪst ˈbruːəri/",
+          "description": "修道院传统酿造",
+          "tags": [
+            "history",
+            "belgian",
+            "monastery"
+          ]
+        },
+        {
+          "en": "Craft beer",
+          "cn": "精酿啤酒",
+          "ipa": "/kræft bɪər/",
+          "description": "现代精酿啤酒文化",
+          "tags": [
+            "modern",
+            "craft",
+            "culture"
+          ]
+        },
+        {
+          "en": "Cicerone",
+          "cn": "啤酒专家认证",
+          "ipa": "/ˈsɪsəroʊn/",
+          "tags": [
+            "service",
+            "history"
+          ]
+        }
+      ]
+    },
+    "INGREDIENTS": {
+      "en": "Beer Ingredients",
+      "cn": "啤酒原料",
+      "terms": [
+        {
+          "en": "Roasted malt",
+          "cn": "烘烤麦芽",
+          "ipa": "/ˈroʊstɪd mɔːlt/",
+          "tags": [
+            "malt",
+            "grain",
+            "roasted"
+          ]
+        },
+        {
+          "en": "Pilsner malt",
+          "cn": "皮尔森麦芽",
+          "ipa": "/ˈpɪlznər mɔːlt/",
+          "tags": [
+            "malt",
+            "grain",
+            "base malt"
+          ]
+        },
+        {
+          "en": "Vienna malt",
+          "cn": "维也纳麦芽",
+          "ipa": "/ˈviːənə mɔːlt/",
+          "tags": [
+            "malt",
+            "grain"
+          ]
+        },
+        {
+          "en": "Munich malt",
+          "cn": "慕尼黑麦芽",
+          "ipa": "/ˈmjuːnɪk mɔːlt/",
+          "tags": [
+            "malt",
+            "grain"
+          ]
+        },
+        {
+          "en": "Caramel malt",
+          "cn": "焦糖麦芽",
+          "ipa": "/ˈkærəməl mɔːlt/",
+          "tags": [
+            "malt",
+            "grain"
+          ]
+        },
+        {
+          "en": "Black malt",
+          "cn": "黑麦芽",
+          "ipa": "/blæk mɔːlt/",
+          "tags": [
+            "malt",
+            "grain"
+          ]
+        },
+        {
+          "en": "Saccharomyces cerevisiae",
+          "cn": "啤酒酵母",
+          "ipa": "/ˌsækəroʊˈmaɪsiːz ˌsɛrəˈvɪsɪi/",
+          "tags": [
+            "yeast"
+          ]
+        },
+        {
+          "en": "Saccharomyces pastorianus",
+          "cn": "拉格酵母",
+          "ipa": "/ˌsækəroʊˈmaɪsiːz pæsˈtɔːriənəs/",
+          "tags": [
+            "yeast"
+          ]
+        },
+        {
+          "en": "Brettanomyces",
+          "cn": "布雷特酵母",
+          "ipa": "/ˌbrɛtənoʊˈmaɪsiːz/",
+          "tags": [
+            "yeast"
+          ]
+        },
+        {
+          "en": "Apollo",
+          "cn": "阿波罗",
+          "ipa": "/æpoʊlloʊ/",
+          "description": "",
+          "tags": [
+            "USA Hops"
+          ]
+        },
+        {
+          "en": "Bravo",
+          "cn": "布拉沃",
+          "ipa": "/brævoʊ/",
+          "description": "",
+          "tags": [
+            "USA Hops"
+          ]
+        },
+        {
+          "en": "Newport",
+          "cn": "纽波特",
+          "ipa": "/newpɔːrt/",
+          "description": "",
+          "tags": [
+            "USA Hops"
+          ]
+        },
+        {
+          "en": "Pride of Ringwood",
+          "cn": "灵伍德之傲",
+          "ipa": "/praɪde oʊf rɪŋwuːd/",
+          "description": "",
+          "tags": [
+            "Australia Hops"
+          ]
+        },
+        {
+          "en": "Summit",
+          "cn": "萨米特",
+          "ipa": "/sʌmmaɪt/",
+          "description": "",
+          "tags": [
+            "USA Hops"
+          ]
+        },
+        {
+          "en": "Warrior",
+          "cn": "战士",
+          "ipa": "/wɑːrraɪɔːr/",
+          "description": "",
+          "tags": [
+            "USA Hops"
+          ]
+        },
+        {
+          "en": "Zeus",
+          "cn": "宙斯",
+          "ipa": "/zeʌs/",
+          "description": "",
+          "tags": [
+            "USA Hops"
+          ]
+        },
+        {
+          "en": "Amarillo",
+          "cn": "亚麻黄",
+          "ipa": "/æmɑːraɪlloʊ/",
+          "description": "",
+          "tags": [
+            "USA Hops"
+          ]
+        },
+        {
+          "en": "Cascade",
+          "cn": "卡斯卡特",
+          "ipa": "/cæscæde/",
+          "description": "",
+          "tags": [
+            "USA Hops"
+          ]
+        },
+        {
+          "en": "Crystal",
+          "cn": "水晶",
+          "ipa": "/cristæl/",
+          "description": "",
+          "tags": [
+            "USA Hops"
+          ]
+        },
+        {
+          "en": "East Kent Golding",
+          "cn": "东肯特戈丁",
+          "ipa": "/iːst kent goʊldɪŋ/",
+          "description": "",
+          "tags": [
+            "UK Hops"
+          ]
+        },
+        {
+          "en": "Fuggle",
+          "cn": "法格",
+          "ipa": "/fʌggle/",
+          "description": "",
+          "tags": [
+            "UK Hops"
+          ]
+        },
+        {
+          "en": "Hallertau",
+          "cn": "哈拉道",
+          "ipa": "/hællərtæʌ/",
+          "description": "",
+          "tags": [
+            "Germany Hops"
+          ]
+        },
+        {
+          "en": "Hersbrucker",
+          "cn": "赫斯布鲁克",
+          "ipa": "/hərsbrʌkər/",
+          "description": "",
+          "tags": [
+            "Germany Hops"
+          ]
+        },
+        {
+          "en": "Liberty",
+          "cn": "自由",
+          "ipa": "/laɪbərti/",
+          "description": "",
+          "tags": [
+            "USA Hops"
+          ]
+        },
+        {
+          "en": "Mount Hood",
+          "cn": "胡德山",
+          "ipa": "/moʊʌnt huːd/",
+          "description": "",
+          "tags": [
+            "USA Hops"
+          ]
+        },
+        {
+          "en": "Admiral",
+          "cn": "海军上将",
+          "ipa": "/ædmɜːræl/",
+          "description": "",
+          "tags": [
+            "UK Hops"
+          ]
+        },
+        {
+          "en": "Ahtanum",
+          "cn": "阿特纳姆",
+          "ipa": "/æhtænʌm/",
+          "description": "",
+          "tags": [
+            "USA Hops"
+          ]
+        },
+        {
+          "en": "Motueka",
+          "cn": "莫图依卡",
+          "ipa": "/moʊtʌekæ/",
+          "description": "",
+          "tags": [
+            "NZ Hops"
+          ]
+        },
+        {
+          "en": "Riwaka",
+          "cn": "瑞瓦卡",
+          "ipa": "/raɪwækæ/",
+          "description": "",
+          "tags": [
+            "NZ Hops"
+          ]
+        },
+        {
+          "en": "Saaz",
+          "cn": "萨兹",
+          "ipa": "/sææz/",
+          "description": "",
+          "tags": [
+            "CR Hops"
+          ]
+        },
+        {
+          "en": "Saphir",
+          "cn": "蓝宝石",
+          "ipa": "/sæfɜːr/",
+          "description": "",
+          "tags": [
+            "Germany Hops"
+          ]
+        },
+        {
+          "en": "Spalt",
+          "cn": "斯帕特",
+          "ipa": "/spælt/",
+          "description": "",
+          "tags": [
+            "Germany Hops"
+          ]
+        },
+        {
+          "en": "Sterling",
+          "cn": "斯特林",
+          "ipa": "/stərlɪŋ/",
+          "description": "",
+          "tags": [
+            "USA Hops"
+          ]
+        },
+        {
+          "en": "Strisselspalt",
+          "cn": "斯特里瑟斯帕特",
+          "ipa": "/straɪsselspælt/",
+          "description": "",
+          "tags": [
+            "France Hops"
+          ]
+        },
+        {
+          "en": "Tettnanger",
+          "cn": "特南格",
+          "ipa": "/tettnæŋər/",
+          "description": "",
+          "tags": [
+            "Germany Hops"
+          ]
+        },
+        {
+          "en": "Ultra",
+          "cn": "极致",
+          "ipa": "/ʌltræ/",
+          "description": "",
+          "tags": [
+            "USA Hops"
+          ]
+        },
+        {
+          "en": "Vanguard",
+          "cn": "先锋",
+          "ipa": "/væŋʌɑːrd/",
+          "description": "",
+          "tags": [
+            "USA Hops"
+          ]
+        },
+        {
+          "en": "Bramling Cross",
+          "cn": "布拉姆林十字",
+          "ipa": "/bræmlɪŋ croʊss/",
+          "description": "",
+          "tags": [
+            "UK Hops"
+          ]
+        },
+        {
+          "en": "Challenger",
+          "cn": "挑战者",
+          "ipa": "/tʃælleŋər/",
+          "description": "",
+          "tags": [
+            "UK Hops"
+          ]
+        },
+        {
+          "en": "Chinook",
+          "cn": "奇努克",
+          "ipa": "/tʃaɪnuːk/",
+          "description": "",
+          "tags": [
+            "USA Hops"
+          ]
+        },
+        {
+          "en": "Citra",
+          "cn": "西楚",
+          "ipa": "/caɪtræ/",
+          "description": "",
+          "tags": [
+            "USA Hops"
+          ]
+        },
+        {
+          "en": "Columbus",
+          "cn": "哥伦布",
+          "ipa": "/coʊlʌmbʌs/",
+          "description": "",
+          "tags": [
+            "USA Hops"
+          ]
+        },
+        {
+          "en": "Dr Rudi",
+          "cn": "鲁迪博士",
+          "ipa": "/dr rʌdaɪ/",
+          "description": "",
+          "tags": [
+            "NZ Hops"
+          ]
+        },
+        {
+          "en": "Galaxy",
+          "cn": "银河",
+          "ipa": "/gælæxi/",
+          "description": "",
+          "tags": [
+            "Australia Hops"
+          ]
+        },
+        {
+          "en": "Green Bullet",
+          "cn": "绿色子弹",
+          "ipa": "/griːn bʌllet/",
+          "description": "",
+          "tags": [
+            "NZ Hops"
+          ]
+        },
+        {
+          "en": "Hallertau Blanc",
+          "cn": "哈拉道布朗",
+          "ipa": "/hællərtæʌ blænc/",
+          "description": "",
+          "tags": [
+            "Germany Hops"
+          ]
+        },
+        {
+          "en": "Herkules",
+          "cn": "大力神",
+          "ipa": "/hərkʌles/",
+          "description": "",
+          "tags": [
+            "Germany Hops"
+          ]
+        },
+        {
+          "en": "Kohatu",
+          "cn": "科哈图",
+          "ipa": "/koʊhætʌ/",
+          "description": "",
+          "tags": [
+            "NZ Hops"
+          ]
+        },
+        {
+          "en": "Mandarina Bavaria",
+          "cn": "曼达琳娜巴伐利亚",
+          "ipa": "/mændɑːraɪnæ bævɑːraɪæ/",
+          "description": "",
+          "tags": [
+            "Germany Hops"
+          ]
+        },
+        {
+          "en": "Mosaic",
+          "cn": "马赛克",
+          "ipa": "/moʊsæaɪc/",
+          "description": "",
+          "tags": [
+            "USA Hops"
+          ]
+        },
+        {
+          "en": "Nelson Sauvin",
+          "cn": "尼尔森苏维",
+          "ipa": "/nelsoʊn sæʌvaɪn/",
+          "description": "",
+          "tags": [
+            "NZ Hops"
+          ]
+        },
+        {
+          "en": "Nugget",
+          "cn": "努格特",
+          "ipa": "/nʌgget/",
+          "description": "",
+          "tags": [
+            "USA Hops"
+          ]
+        },
+        {
+          "en": "Opal",
+          "cn": "欧泊",
+          "ipa": "/oʊpæl/",
+          "description": "",
+          "tags": [
+            "Germany Hops"
+          ]
+        },
+        {
+          "en": "Perle",
+          "cn": "佩勒",
+          "ipa": "/pərle/",
+          "description": "",
+          "tags": [
+            "Germany Hops"
+          ]
+        },
+        {
+          "en": "Polaris",
+          "cn": "北极星",
+          "ipa": "/poʊlɑːraɪs/",
+          "description": "",
+          "tags": [
+            "Germany Hops"
+          ]
+        },
+        {
+          "en": "Rakau",
+          "cn": "拉考",
+          "ipa": "/rækæʌ/",
+          "description": "",
+          "tags": [
+            "NZ Hops"
+          ]
+        },
+        {
+          "en": "Simcoe",
+          "cn": "西姆科",
+          "ipa": "/saɪmcoʊe/",
+          "description": "",
+          "tags": [
+            "USA Hops"
+          ]
+        },
+        {
+          "en": "Southern Cross",
+          "cn": "南部穿越",
+          "ipa": "/soʊʌθərn croʊss/",
+          "description": "",
+          "tags": [
+            "NZ Hops"
+          ]
+        },
+        {
+          "en": "Target",
+          "cn": "塔吉特",
+          "ipa": "/tɑːrget/",
+          "description": "",
+          "tags": [
+            "UK Hops"
+          ]
+        },
+        {
+          "en": "Topaz",
+          "cn": "黄玉",
+          "ipa": "/toʊpæz/",
+          "description": "",
+          "tags": [
+            "Australia Hops"
+          ]
+        },
+        {
+          "en": "Vic Secret",
+          "cn": "维秘",
+          "ipa": "/vaɪc secret/",
+          "description": "",
+          "tags": [
+            "Australia Hops"
+          ]
+        },
+        {
+          "en": "Wai-iti",
+          "cn": "怀伊蒂",
+          "ipa": "/wæaɪ aɪtaɪ/",
+          "description": "",
+          "tags": [
+            "NZ Hops"
+          ]
+        },
+        {
+          "en": "Magnum",
+          "cn": "马格努门",
+          "ipa": "/mægnʌm/",
+          "tags": [
+            "Germany Hops"
+          ],
+          "description": ""
+        },
+        {
+          "en": "Willamette",
+          "cn": "威廉麦特",
+          "ipa": "/waɪllæmette/",
+          "description": "",
+          "tags": [
+            "USA Hops"
+          ]
+        },
+        {
+          "en": "Azacca",
+          "cn": "阿扎卡",
+          "ipa": "/æzæccæ/",
+          "description": "",
+          "tags": [
+            "USA Hops"
+          ]
+        },
+        {
+          "en": "Cashmere",
+          "cn": "凯斯米尔",
+          "ipa": "/cæʃməre/",
+          "tags": [
+            "USA Hops"
+          ],
+          "description": ""
+        },
+        {
+          "en": "Centennial",
+          "cn": "世纪",
+          "ipa": "/centennaɪæl/",
+          "description": "",
+          "tags": [
+            "USA Hops"
+          ]
+        },
+        {
+          "en": "El Dorado",
+          "cn": "埃尔多拉多",
+          "ipa": "/el dɔːrædoʊ/",
+          "description": "",
+          "tags": [
+            "USA Hops"
+          ]
+        },
+        {
+          "en": "Enigma",
+          "cn": "谜",
+          "ipa": "/enaɪgmæ/",
+          "description": "",
+          "tags": [
+            "Australia Hops"
+          ]
+        },
+        {
+          "en": "Northern Brewer",
+          "cn": "北方酿造者",
+          "ipa": "/nɔːrθərn bruːər/",
+          "description": "",
+          "tags": [
+            "Germany Hops"
+          ]
+        },
+        {
+          "en": "Comet",
+          "cn": "彗星",
+          "ipa": "/coʊmet/",
+          "description": "",
+          "tags": [
+            "USA Hops"
+          ]
+        },
+        {
+          "en": "Denali",
+          "cn": "德纳里",
+          "ipa": "/denælaɪ/",
+          "description": "",
+          "tags": [
+            "USA Hops"
+          ]
+        },
+        {
+          "en": "Eureka",
+          "cn": "尤里卡",
+          "ipa": "/eʌrekæ/",
+          "description": "",
+          "tags": [
+            "USA Hops"
+          ]
+        },
+        {
+          "en": "First Gold",
+          "cn": "第一金",
+          "ipa": "/fɜːrst goʊld/",
+          "description": "",
+          "tags": [
+            "UK Hops"
+          ]
+        },
+        {
+          "en": "Glacier",
+          "cn": "冰川",
+          "ipa": "/glæcaɪər/",
+          "description": "",
+          "tags": [
+            "USA Hops"
+          ]
+        },
+        {
+          "en": "Idaho 7",
+          "cn": "爱达荷7号",
+          "ipa": "/aɪdæhoʊ 7/",
+          "description": "",
+          "tags": [
+            "USA Hops"
+          ]
+        },
+        {
+          "en": "Pacific Gem",
+          "cn": "太平洋宝石",
+          "ipa": "/pæcaɪfaɪc gem/",
+          "description": "",
+          "tags": [
+            "NZ Hops"
+          ]
+        },
+        {
+          "en": "Pacific Jade",
+          "cn": "太平洋翡翠",
+          "ipa": "/pæcaɪfaɪc jæde/",
+          "description": "",
+          "tags": [
+            "NZ Hops"
+          ]
+        },
+        {
+          "en": "Pekko",
+          "cn": "佩科",
+          "ipa": "/pekkoʊ/",
+          "description": "",
+          "tags": [
+            "USA Hops"
+          ]
+        },
+        {
+          "en": "Sabro",
+          "cn": "夏洛",
+          "ipa": "/sæbroʊ/",
+          "description": "",
+          "tags": [
+            "USA Hops"
+          ]
+        },
+        {
+          "en": "Sorachi Ace",
+          "cn": "空知王牌",
+          "ipa": "/sɔːrætʃaɪ æce/",
+          "description": "",
+          "tags": [
+            "Japan Hops"
+          ]
+        },
+        {
+          "en": "Strata",
+          "cn": "地层",
+          "ipa": "/strætæ/",
+          "description": "",
+          "tags": [
+            "USA Hops"
+          ]
+        },
+        {
+          "en": "Sultana",
+          "cn": "苏丹娜",
+          "ipa": "/sʌltænæ/",
+          "description": "",
+          "tags": [
+            "USA Hops"
+          ]
+        },
+        {
+          "en": "Talus",
+          "cn": "泰勒斯",
+          "ipa": "/tælʌs/",
+          "description": "",
+          "tags": [
+            "USA Hops"
+          ]
+        },
+        {
+          "en": "Ella",
+          "cn": "艾拉",
+          "ipa": "/ellæ/",
+          "description": "",
+          "tags": [
+            "Australia Hops"
+          ]
+        },
+        {
+          "en": "Experimental 06297",
+          "cn": "实验06297",
+          "ipa": "/expəraɪməntæl 06297/",
+          "description": "",
+          "tags": [
+            "USA Hops"
+          ]
+        },
+        {
+          "en": "Experimental HBC 472",
+          "cn": "实验HBC 472",
+          "ipa": "/expəraɪməntæl hbc 472/",
+          "description": "",
+          "tags": [
+            "USA Hops"
+          ]
+        },
+        {
+          "en": "Hallertau Tradition",
+          "cn": "哈拉道传统",
+          "ipa": "/hællərtæʌ trædaɪʃən/",
+          "description": "",
+          "tags": [
+            "Germany Hops"
+          ]
+        },
+        {
+          "en": "HBC 472",
+          "cn": "HBC 472",
+          "ipa": "/hbc 472/",
+          "description": "",
+          "tags": [
+            "USA Hops"
+          ]
+        },
+        {
+          "en": "HBC 586",
+          "cn": "HBC 586",
+          "ipa": "/hbc 586/",
+          "description": "",
+          "tags": [
+            "USA Hops"
+          ]
+        },
+        {
+          "en": "HBC 692",
+          "cn": "HBC 692",
+          "ipa": "/hbc 692/",
+          "description": "",
+          "tags": [
+            "USA Hops"
+          ]
+        }
+      ]
+    },
+    "EQUIPMENT": {
+      "en": "Brewing Equipment",
+      "cn": "酿造设备",
+      "terms": [
+        {
+          "en": "Mash tun",
+          "cn": "糖化锅",
+          "ipa": "/mæʃ tʌn/",
+          "tags": [
+            "equipment"
+          ]
+        },
+        {
+          "en": "Lauter tun",
+          "cn": "过滤槽",
+          "ipa": "/ˈlaʊtər tʌn/",
+          "tags": [
+            "equipment"
+          ]
+        },
+        {
+          "en": "Brew kettle",
+          "cn": "煮沸锅",
+          "ipa": "/bruː ˈketl/",
+          "tags": [
+            "equipment"
+          ]
+        },
+        {
+          "en": "Fermenter",
+          "cn": "发酵罐",
+          "ipa": "/fərˈmentər/",
+          "tags": [
+            "equipment"
+          ]
+        },
+        {
+          "en": "Bright tank",
+          "cn": "清酒罐",
+          "ipa": "/braɪt tæŋk/",
+          "tags": [
+            "equipment"
+          ],
+          "description": ""
+        },
+        {
+          "en": "Heat exchanger",
+          "cn": "热交换器",
+          "ipa": "/hiːt ɪksˈtʃeɪndʒər/",
+          "tags": [
+            "equipment"
+          ]
+        },
+        {
+          "en": "Plate heat exchanger",
+          "cn": "板式热交换器",
+          "ipa": "/plæt ˈhiːt ɪksˈtʃeɪndʒər/",
+          "tags": [
+            "equipment"
+          ]
+        },
+        {
+          "en": "CIP system",
+          "cn": "CIP清洗系统",
+          "ipa": "/ˈsɪp ˈsɪstəm/",
+          "tags": [
+            "equipment"
+          ]
+        },
+        {
+          "en": "Centrifuge",
+          "cn": "离心机",
+          "ipa": "/ˈsɛntrɪfʌdʒ/",
+          "tags": [
+            "equipment"
+          ]
+        }
+      ]
+    },
+    "BREWING_TECH": {
+      "en": "Brewing Process & Technology",
+      "cn": "酿造工艺与技术",
+      "terms": [
+        {
+          "en": "Mashing",
+          "cn": "糖化",
+          "ipa": "/ˈmæʃɪŋ/",
+          "description": "将麦芽在特定温度下浸泡，使淀粉转化为糖",
+          "tags": [
+            "process",
+            "brewing",
+            "enzymatic"
+          ]
+        },
+        {
+          "en": "Sparging",
+          "cn": "冲洗",
+          "ipa": "/ˈspɑːrdʒɪŋ/",
+          "tags": [
+            "process"
+          ]
+        },
+        {
+          "en": "Fermentation",
+          "cn": "发酵",
+          "ipa": "/ˌfɜːrmenˈteɪʃn/",
+          "description": "酵母将糖转化为酒精和二氧化碳的过程",
+          "tags": [
+            "process",
+            "yeast",
+            "biochemical"
+          ]
+        },
+        {
+          "en": "Dry hopping",
+          "cn": "干投",
+          "ipa": "/draɪ ˈhɒpɪŋ/",
+          "tags": [
+            "process"
+          ]
+        },
+        {
+          "en": "Conditioning",
+          "cn": "陈化",
+          "ipa": "/kənˈdɪʃənɪŋ/",
+          "tags": [
+            "process"
+          ]
+        },
+        {
+          "en": "Decoction",
+          "cn": "煮沸糖化法",
+          "ipa": "/dɪˈkɒkʃən/",
+          "tags": [
+            "process"
+          ]
+        },
+        {
+          "en": "Barrel aged",
+          "cn": "桶陈",
+          "ipa": "/ˈbɑːrəl ˈeɪdʒd/",
+          "tags": [
+            "process"
+          ]
+        }
+      ]
+    },
+    "TASTING": {
+      "en": "Style & Tasting",
+      "cn": "风格品鉴与比赛",
+      "terms": [
+        {
+          "en": "Lager",
+          "cn": "拉格啤酒",
+          "ipa": "/ˈlɑːɡər/",
+          "tags": [
+            "style"
+          ]
+        },
+        {
+          "en": "Ale",
+          "cn": "艾尔啤酒",
+          "ipa": "/eɪl/",
+          "tags": [
+            "style"
+          ]
+        },
+        {
+          "en": "Pilsner",
+          "cn": "皮尔森啤酒",
+          "ipa": "/ˈpɪlznər/",
+          "tags": [
+            "style"
+          ]
+        },
+        {
+          "en": "Stout",
+          "cn": "世涛",
+          "ipa": "/staʊt/",
+          "tags": [
+            "style"
+          ]
+        },
+        {
+          "en": "Porter",
+          "cn": "波特",
+          "ipa": "/ˈpɔːrtər/",
+          "tags": [
+            "style"
+          ]
+        },
+        {
+          "en": "India Pale Ale",
+          "cn": "印度淡色艾尔",
+          "ipa": "/ˈɪndiə peɪl eɪl/",
+          "tags": [
+            "style"
+          ]
+        },
+        {
+          "en": "Sensory analysis",
+          "cn": "感官分析",
+          "ipa": "/ˈsɛnsəri ˈænəlɪsɪs/",
+          "tags": [
+            "sensory",
+            "evaluation"
+          ]
+        },
+        {
+          "en": "Aroma",
+          "cn": "香气",
+          "ipa": "/əˈroʊmə/",
+          "tags": [
+            "sensory",
+            "evaluation",
+            "flavor"
+          ]
+        },
+        {
+          "en": "Mouthfeel",
+          "cn": "口感",
+          "ipa": "/ˈmaʊθfiːl/",
+          "tags": [
+            "sensory",
+            "evaluation",
+            "texture"
+          ]
+        }
+      ]
+    },
+    "BUSINESS": {
+      "en": "Business & Operations",
+      "cn": "商业与运营",
+      "terms": [
+        {
+          "en": "Contract brewing",
+          "cn": "代工酿造",
+          "ipa": "/ˈkɒntrækt ˈbruːɪŋ/",
+          "tags": [
+            "marketing"
+          ]
+        },
+        {
+          "en": "Brand identity",
+          "cn": "品牌标识",
+          "ipa": "/brænd aɪˈdentəti/",
+          "tags": [
+            "marketing"
+          ]
+        },
+        {
+          "en": "Microbrewery",
+          "cn": "小型啤酒厂",
+          "ipa": "/ˈmaɪkrəʊˌbruːəri/",
+          "tags": [
+            "marketing"
+          ]
+        },
+        {
+          "en": "Quality control",
+          "cn": "质量控制",
+          "ipa": "/ˈkwɒlɪti kənˈtrəʊl/",
+          "tags": [
+            "quality"
+          ]
+        },
+        {
+          "en": "Shelf life",
+          "cn": "保质期",
+          "ipa": "/ʃelf laɪf/",
+          "tags": [
+            "quality"
+          ]
+        },
+        {
+          "en": "Seasonal release",
+          "cn": "季节限定",
+          "ipa": "/ˈsiːzənəl rɪˈliːs/",
+          "tags": [
+            "marketing"
+          ]
+        },
+        {
+          "en": "Limited edition",
+          "cn": "限量版",
+          "ipa": "/ˈlɪmɪtɪd ɪˈdɪʃən/",
+          "tags": [
+            "marketing"
+          ]
+        }
+      ]
+    },
+    "DESIGN": {
+      "en": "Design",
+      "cn": "设计相关",
+      "terms": [
+        {
+          "en": "Label design",
+          "cn": "标签设计",
+          "ipa": "/ˈleɪbəl dɪˈzaɪn/",
+          "tags": [
+            "marketing",
+            "packaging"
+          ]
+        },
+        {
+          "en": "Packaging",
+          "cn": "包装",
+          "ipa": "/ˈpækɪdʒɪŋ/",
+          "tags": [
+            "packaging"
+          ]
+        },
+        {
+          "en": "Crown cap",
+          "cn": "皇冠盖",
+          "ipa": "/kraʊn kæp/",
+          "tags": [
+            "packaging"
+          ]
+        },
+        {
+          "en": "Keg",
+          "cn": "生啤酒桶",
+          "ipa": "/kɛɡ/",
+          "tags": [
+            "packaging"
+          ]
+        },
+        {
+          "en": "Cask",
+          "cn": "木桶",
+          "ipa": "/kɑːsk/",
+          "tags": [
+            "packaging"
+          ]
+        },
+        {
+          "en": "Growler",
+          "cn": "外带瓶",
+          "ipa": "/ˈɡraʊlər/",
+          "tags": [
+            "packaging"
+          ]
+        }
+      ]
+    },
+    "BREWERY": {
+      "en": "Brewery",
+      "cn": "酒厂相关",
+      "terms": [
+        {
+          "en": "Brewhouse",
+          "cn": "酿造车间",
+          "ipa": "/ˈbruːhaʊs/",
+          "tags": [
+            "facility"
+          ]
+        },
+        {
+          "en": "Cellar",
+          "cn": "陈酿间",
+          "ipa": "/ˈsɛlər/",
+          "tags": [
+            "facility"
+          ]
+        },
+        {
+          "en": "Laboratory",
+          "cn": "实验室",
+          "ipa": "/ləˈbɒrətəri/",
+          "tags": [
+            "facility",
+            "quality"
+          ]
+        },
+        {
+          "en": "Microbiological testing",
+          "cn": "微生物检测",
+          "ipa": "/ˌmaɪkrəʊbaɪəˈlɒdʒɪkəl ˈtestɪŋ/",
+          "tags": [
+            "quality"
+          ]
+        },
+        {
+          "en": "YE Brewing",
+          "cn": "野鹅微醺啤酒厂",
+          "ipa": "/ie bruːɪŋ/",
+          "tags": [
+            "国内酒厂"
+          ],
+          "description": ""
+        }
+      ]
+    },
+    "PUB": {
+      "en": "Pub",
+      "cn": "酒吧相关",
+      "terms": [
+        {
+          "en": "Taproom",
+          "cn": "啤酒吧",
+          "ipa": "/ˈtæpruːm/",
+          "tags": [
+            "service"
+          ]
+        },
+        {
+          "en": "Brewpub",
+          "cn": "自酿酒吧",
+          "ipa": "/ˈbruːpʌb/",
+          "tags": [
+            "marketing",
+            "service"
+          ]
+        },
+        {
+          "en": "Draft system",
+          "cn": "扎啤系统",
+          "ipa": "/dræft ˈsɪstəm/",
+          "tags": [
+            "service",
+            "equipment"
+          ]
+        },
+        {
+          "en": "Beer flight",
+          "cn": "啤酒品鉴套装",
+          "ipa": "/bɪər flaɪt/",
+          "tags": [
+            "service"
+          ]
+        },
+        {
+          "en": "Proper glassware",
+          "cn": "专用杯具",
+          "ipa": "/ˈprɒpər ˈɡlɑːsweər/",
+          "tags": [
+            "service"
+          ]
+        },
+        {
+          "en": "Serving temperature",
+          "cn": "服务温度",
+          "ipa": "/ˈsɜːvɪŋ ˈtemprətʃər/",
+          "tags": [
+            "service"
+          ]
+        }
+      ]
+    },
+    "QUALITY": {
+      "en": "Quality Control",
+      "cn": "质量控制",
+      "terms": [
+        {
+          "en": "Dissolved oxygen",
+          "cn": "溶解氧",
+          "ipa": "/dɪˈzɒlvd ˈɒksɪdʒən/",
+          "tags": [
+            "quality"
+          ]
+        },
+        {
+          "en": "pH level",
+          "cn": "酸碱度",
+          "ipa": "/piː eɪtʃ ˈlevəl/",
+          "tags": [
+            "quality"
+          ]
+        },
+        {
+          "en": "Force test",
+          "cn": "强制测试",
+          "ipa": "/fɔːs test/",
+          "tags": [
+            "quality"
+          ]
+        },
+        {
+          "en": "Diacetyl",
+          "cn": "双乙酰",
+          "ipa": "/daɪˈæsɪtaɪl/",
+          "tags": [
+            "defect",
+            "sensory"
+          ]
+        },
+        {
+          "en": "DMS",
+          "cn": "二甲基硫",
+          "ipa": "/diː ɛm ɛs/",
+          "tags": [
+            "defect",
+            "sensory"
+          ]
+        },
+        {
+          "en": "Oxidation",
+          "cn": "氧化",
+          "ipa": "/ˌɒksɪˈdeɪʃən/",
+          "tags": [
+            "defect"
+          ]
+        },
+        {
+          "en": "Light struck",
+          "cn": "光照味",
+          "ipa": "/laɪt strʌk/",
+          "tags": [
+            "defect"
+          ]
+        }
+      ]
+    },
+    "EVENTS": {
+      "en": "Beer Events",
+      "cn": "啤酒活动",
+      "terms": [
+        {
+          "en": "Beer festival",
+          "cn": "啤酒节",
+          "ipa": "/bɪər ˈfestɪvəl/",
+          "tags": [
+            "marketing",
+            "event"
+          ]
+        },
+        {
+          "en": "Tasting event",
+          "cn": "品鉴会",
+          "ipa": "/ˈteɪstɪŋ ɪˈvent/",
+          "tags": [
+            "service",
+            "event",
+            "education"
+          ]
+        },
+        {
+          "en": "Brewery tour",
+          "cn": "酒厂参观",
+          "ipa": "/ˈbruːəri tʊər/",
+          "tags": [
+            "marketing",
+            "education"
+          ]
+        },
+        {
+          "en": "Food pairing",
+          "cn": "美食搭配",
+          "ipa": "/fuːd ˈpeərɪŋ/",
+          "tags": [
+            "service",
+            "marketing"
+          ]
+        },
+        {
+          "en": "Beer competition",
+          "cn": "啤酒比赛",
+          "ipa": "/bɪər ˌkɒmpəˈtɪʃən/",
+          "tags": [
+            "event",
+            "evaluation"
+          ]
+        }
+      ]
+    },
+    "ORGANIZATIONS": {
+      "en": "Beer Organizations",
+      "cn": "啤酒组织",
+      "terms": [
+        {
+          "en": "Cicerone Certification Program",
+          "cn": "啤酒专家认证项目",
+          "ipa": "/ˈsɪsəroʊn ˌsɜːtɪfɪˈkeɪʃən ˈprəʊɡræm/",
+          "tags": [
+            "education",
+            "certification"
+          ]
+        },
+        {
+          "en": "Beer Judge Certification Program",
+          "cn": "啤酒评委认证项目",
+          "ipa": "/bɪər dʒʌdʒ ˌsɜːtɪfɪˈkeɪʃən ˈprəʊɡræm/",
+          "tags": [
+            "education",
+            "certification"
+          ]
+        },
+        {
+          "en": "Brewers Association",
+          "cn": "酿酒师协会",
+          "ipa": "/ˈbruːərz əˌsoʊsiˈeɪʃən/",
+          "tags": [
+            "organization",
+            "industry"
+          ]
+        },
+        {
+          "en": "Master Brewers Association",
+          "cn": "啤酒大师协会",
+          "ipa": "/ˈmɑːstər ˈbruːərz əˌsoʊsiˈeɪʃən/",
+          "tags": [
+            "organization",
+            "education"
+          ]
+        }
+      ]
+    },
+    "SENSORY": {
+      "en": "Sensory Evaluation",
+      "cn": "感官评价",
+      "terms": [
+        {
+          "en": "Estery",
+          "cn": "酯香的",
+          "ipa": "/ˈestəri/",
+          "tags": [
+            "sensory",
+            "flavor"
+          ]
+        },
+        {
+          "en": "Phenolic",
+          "cn": "酚类的",
+          "ipa": "/fəˈnɒlɪk/",
+          "tags": [
+            "sensory",
+            "flavor"
+          ]
+        },
+        {
+          "en": "Clean",
+          "cn": "纯净的",
+          "ipa": "/kliːn/",
+          "tags": [
+            "sensory",
+            "quality"
+          ]
+        },
+        {
+          "en": "Herbal",
+          "cn": "草本的",
+          "ipa": "/ˈhɜːbəl/",
+          "tags": [
+            "sensory",
+            "flavor"
+          ]
+        },
+        {
+          "en": "Earthy",
+          "cn": "土壤气息的",
+          "ipa": "/ˈɜːrθi/",
+          "tags": [
+            "sensory",
+            "flavor"
+          ]
+        },
+        {
+          "en": "Tropical",
+          "cn": "热带水果的",
+          "ipa": "/ˈtrɒpɪkəl/",
+          "tags": [
+            "sensory",
+            "flavor"
+          ]
+        },
+        {
+          "en": "Stone fruit",
+          "cn": "核果的",
+          "ipa": "/stəʊn fruːt/",
+          "tags": [
+            "sensory",
+            "flavor"
+          ]
+        },
+        {
+          "en": "Dank",
+          "cn": "潮湿草药的",
+          "ipa": "/dæŋk/",
+          "tags": [
+            "sensory",
+            "flavor"
+          ]
+        }
+      ]
+    },
+    "MEASUREMENTS": {
+      "en": "Measurements & Standards",
+      "cn": "测量与标准",
+      "terms": [
+        {
+          "en": "Plato scale",
+          "cn": "柏拉图度",
+          "ipa": "/ˈpleɪtoʊ skeɪl/",
+          "tags": [
+            "measurement",
+            "quality"
+          ]
+        },
+        {
+          "en": "Specific gravity",
+          "cn": "比重",
+          "ipa": "/spəˈsɪfɪk ˈɡrævɪti/",
+          "tags": [
+            "measurement",
+            "quality"
+          ]
+        },
+        {
+          "en": "IBU",
+          "cn": "国际苦度单位",
+          "ipa": "/aɪ biː juː/",
+          "tags": [
+            "measurement",
+            "sensory"
+          ]
+        },
+        {
+          "en": "EBC",
+          "cn": "欧洲啤酒色度",
+          "ipa": "/iː biː siː/",
+          "tags": [
+            "measurement",
+            "sensory"
+          ]
+        },
+        {
+          "en": "SRM",
+          "cn": "标准参考方法",
+          "ipa": "/ɛs ɑːr ɛm/",
+          "tags": [
+            "measurement",
+            "sensory"
+          ]
+        },
+        {
+          "en": "Real extract",
+          "cn": "实际浸出物",
+          "ipa": "/rɪəl ˈekstrækt/",
+          "tags": [
+            "measurement",
+            "quality"
+          ]
+        },
+        {
+          "en": "Apparent extract",
+          "cn": "表观浸出物",
+          "ipa": "/əˈpærənt ˈekstrækt/",
+          "tags": [
+            "measurement",
+            "quality"
+          ]
+        },
+        {
+          "en": "Alcohol by volume",
+          "cn": "酒精度数",
+          "ipa": "/ˈælkəhɒl baɪ ˈvɒljuːm/",
+          "tags": [
+            "measurement",
+            "quality"
+          ]
+        }
+      ]
+    },
+    "DRAFT_SYSTEM": {
+      "en": "Draft System",
+      "cn": "生啤系统",
+      "terms": [
+        {
+          "en": "Beer line",
+          "cn": "啤酒管路",
+          "ipa": "/bɪər laɪn/",
+          "tags": [
+            "draft",
+            "equipment"
+          ]
+        },
+        {
+          "en": "CO2 regulator",
+          "cn": "二氧化碳调节器",
+          "ipa": "/siː əʊ tuː ˈreɡjʊleɪtər/",
+          "tags": [
+            "draft",
+            "equipment"
+          ]
+        },
+        {
+          "en": "Coupler",
+          "cn": "啤酒桶接头",
+          "ipa": "/ˈkʌplər/",
+          "tags": [
+            "draft",
+            "equipment"
+          ]
+        },
+        {
+          "en": "Faucet",
+          "cn": "啤酒龙头",
+          "ipa": "/ˈfɔːsɪt/",
+          "tags": [
+            "draft",
+            "equipment"
+          ]
+        },
+        {
+          "en": "Foam on beer detector",
+          "cn": "起泡检测器",
+          "ipa": "/fəʊm ɒn bɪər dɪˈtektər/",
+          "tags": [
+            "draft",
+            "equipment"
+          ]
+        },
+        {
+          "en": "Glycol system",
+          "cn": "乙二醇制冷系统",
+          "ipa": "/ˈɡlaɪkɒl ˈsɪstəm/",
+          "tags": [
+            "draft",
+            "equipment"
+          ]
+        },
+        {
+          "en": "Line cleaning",
+          "cn": "管路清洗",
+          "ipa": "/laɪn ˈkliːnɪŋ/",
+          "tags": [
+            "draft",
+            "maintenance"
+          ]
+        },
+        {
+          "en": "Pressure gauge",
+          "cn": "压力表",
+          "ipa": "/ˈpreʃər ɡeɪdʒ/",
+          "tags": [
+            "draft",
+            "equipment"
+          ]
+        },
+        {
+          "en": "Temperature control",
+          "cn": "温度控制",
+          "ipa": "/ˈtemprətʃər kənˈtrəʊl/",
+          "tags": [
+            "draft",
+            "quality"
+          ]
+        },
+        {
+          "en": "Tower",
+          "cn": "啤酒塔",
+          "ipa": "/ˈtaʊər/",
+          "tags": [
+            "draft",
+            "equipment"
+          ]
+        }
+      ]
+    },
+    "SERVICE_TECHNIQUE": {
+      "en": "Service Technique",
+      "cn": "侍酒技术",
+      "terms": [
+        {
+          "en": "Perfect pour",
+          "cn": "完美倒酒",
+          "ipa": "/ˈpɜːfɪkt pɔːr/",
+          "tags": [
+            "service",
+            "technique"
+          ]
+        },
+        {
+          "en": "Glass preparation",
+          "cn": "杯具准备",
+          "ipa": "/ɡlɑːs ˌprepəˈreɪʃən/",
+          "tags": [
+            "service",
+            "technique"
+          ]
+        },
+        {
+          "en": "Head formation",
+          "cn": "泡沫形成",
+          "ipa": "/hed fɔːˈmeɪʃən/",
+          "tags": [
+            "service",
+            "technique"
+          ]
+        },
+        {
+          "en": "Glass rinsing",
+          "cn": "杯具冲洗",
+          "ipa": "/ɡlɑːs ˈrɪnsɪŋ/",
+          "tags": [
+            "service",
+            "technique"
+          ]
+        },
+        {
+          "en": "Presentation",
+          "cn": "呈现方式",
+          "ipa": "/ˌprezənˈteɪʃən/",
+          "tags": [
+            "service",
+            "technique"
+          ]
+        },
+        {
+          "en": "Tasting guidance",
+          "cn": "品鉴指导",
+          "ipa": "/ˈteɪstɪŋ ˈɡaɪdəns/",
+          "tags": [
+            "service",
+            "education"
+          ]
+        },
+        {
+          "en": "Style-specific service",
+          "cn": "特定风格服务",
+          "ipa": "/staɪl spəˈsɪfɪk ˈsɜːvɪs/",
+          "tags": [
+            "service",
+            "technique"
+          ]
+        },
+        {
+          "en": "Glassware selection",
+          "cn": "杯具选择",
+          "ipa": "/ˈɡlɑːsweər sɪˈlekʃən/",
+          "tags": [
+            "service",
+            "technique"
+          ]
+        },
+        {
+          "en": "Quality check",
+          "cn": "品质检查",
+          "ipa": "/ˈkwɒlɪti tʃek/",
+          "tags": [
+            "service",
+            "quality"
+          ]
+        }
+      ]
+    }
+  }
+}

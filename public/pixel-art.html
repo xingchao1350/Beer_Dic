@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>像素艺术生成器</title>
+    <link rel="stylesheet" href="/pixel-styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>像素艺术生成器</h1>
+            <div class="prompt-box">
+                <input type="text" id="promptInput" placeholder="输入提示词，生成像素艺术...">
+                <button id="generateBtn">生成</button>
+            </div>
+        </header>
+        
+        <main>
+            <div class="image-container">
+                <div class="original-image">
+                    <h3>原始图片</h3>
+                    <img id="sourceImage" alt="原始图片">
+                    <div class="loading-indicator" id="loadingIndicator">
+                        <span>生成中...</span>
+                    </div>
+                </div>
+                
+                <div class="pixel-image">
+                    <h3>像素化效果</h3>
+                    <canvas id="pixelCanvas"></canvas>
+                    <div class="controls">
+                        <div class="control-group">
+                            <label>像素大小:</label>
+                            <input type="range" id="pixelSize" min="4" max="32" value="8">
+                            <span id="pixelSizeValue">8px</span>
+                        </div>
+                        <button id="downloadBtn" disabled>下载图片</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="/pixel-script.js"></script>
+</body>
+</html> 

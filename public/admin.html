@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>啤酒术语管理系统</title>
+    <link rel="stylesheet" href="/admin-styles.css">
+</head>
+<body>
+    <div class="admin-container">
+        <header>
+            <h1>啤酒术语管理系统</h1>
+        </header>
+        
+        <main>
+            <div class="admin-panel">
+                <div class="category-section">
+                    <h2>分类管理</h2>
+                    <div class="category-list"></div>
+                    <div class="category-actions">
+                        <button id="addCategoryBtn">添加新分类</button>
+                        <div class="import-section">
+                            <input type="file" id="csvFileInput" accept=".csv" style="display: none;">
+                            <button id="importCsvBtn">导入CSV</button>
+                        </div>
+                    </div>
+                    <div class="import-guide">
+                        <p>CSV文件格式要求：</p>
+                        <small>
+                            category_key,category_en,category_cn,term_en,term_cn,term_ipa,term_description,term_tags
+                        </small>
+                    </div>
+                </div>
+                
+                <div class="term-section">
+                    <h2>术语管理</h2>
+                    <div class="term-actions">
+                        <button id="checkDuplicatesBtn" class="secondary-btn">
+                            <svg viewBox="0 0 24 24" width="16" height="16">
+                                <path fill="currentColor" d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20M12,12H8V14H12V12M16,16H8V18H16V16Z"/>
+                            </svg>
+                            检查重复术语
+                        </button>
+                    </div>
+                    <div class="term-form">
+                        <select id="categorySelect">
+                            <option value="">选择分类...</option>
+                        </select>
+                        
+                        <div class="form-group">
+                            <label>英文名称:</label>
+                            <input type="text" id="termEn" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>中文名称:</label>
+                            <input type="text" id="termCn" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>音标:</label>
+                            <div class="ipa-input-group">
+                                <input type="text" id="termIpa">
+                                <button type="button" id="generateIpaBtn" title="根据英文名称生成音标">
+                                    生成音标
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>标签:</label>
+                            <input type="text" id="termTags" placeholder="用逗号分隔多个标签">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>描述:</label>
+                            <textarea id="termDescription"></textarea>
+                        </div>
+                        
+                        <button id="saveTermBtn">保存术语</button>
+                    </div>
+                    
+                    <div class="terms-list">
+                        <!-- 术语列表将通过JS动态生成 -->
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="/admin-script.js"></script>
+</body>
+</html> 

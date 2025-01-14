@@ -1,0 +1,602 @@
+/* 基础样式重置和变量定义 */
+:root {
+    --primary-color: #2196F3;
+    --success-color: #4CAF50;
+    --danger-color: #f44336;
+    --warning-color: #ff9800;
+    --text-color: #333;
+    --border-color: #ddd;
+    --bg-color: #f5f5f5;
+    --header-height: 60px;
+    --sidebar-width: 280px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+
+/* 布局容器 */
+.admin-container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: var(--header-height) 1fr;
+}
+
+/* 顶部导航栏 */
+header {
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+/* 主要内容区域 */
+main {
+    margin-top: var(--header-height);
+    padding: 20px;
+}
+
+.admin-panel {
+    display: grid;
+    grid-template-columns: var(--sidebar-width) 1fr;
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* 分类管理侧边栏 */
+.category-section {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    height: fit-content;
+    position: sticky;
+    top: calc(var(--header-height) + 20px);
+}
+
+.category-section h2 {
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.category-list {
+    max-height: calc(100vh - var(--header-height) - 160px);
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+/* 术语管理区域 */
+.term-section {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+.term-section h2 {
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+/* 表单样式 */
+.term-form {
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #666;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+/* IPA输入组样式 */
+.ipa-input-group {
+    display: flex;
+    gap: 10px;
+}
+
+.ipa-input-group input {
+    flex: 1;
+}
+
+.ipa-input-group button {
+    white-space: nowrap;
+    background: var(--primary-color);
+    font-size: 0.9rem;
+    padding: 10px 15px;
+}
+
+/* 术语列表样式 */
+.terms-list {
+    margin-top: 20px;
+}
+
+.term-item {
+    padding: 15px;
+    border-bottom: 1px solid var(--border-color);
+    transition: background-color 0.3s;
+}
+
+.term-item:hover {
+    background: #f5f5f5;
+}
+
+.term-item-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.term-name {
+    font-size: 1.1rem;
+    color: var(--text-color);
+}
+
+/* 按钮样式 */
+button {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+button:hover {
+    background: #1976D2;
+    transform: translateY(-1px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+button.success {
+    background: var(--success-color);
+}
+
+button.danger {
+    background: var(--danger-color);
+}
+
+button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* 响应式布局 */
+@media (max-width: 1024px) {
+    .admin-panel {
+        grid-template-columns: 1fr;
+    }
+    
+    .category-section {
+        position: static;
+        margin-bottom: 20px;
+    }
+    
+    .category-list {
+        max-height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --header-height: 50px;
+    }
+    
+    header h1 {
+        font-size: 1.2rem;
+    }
+    
+    main {
+        padding: 10px;
+    }
+    
+    .term-form {
+        padding: 15px;
+    }
+    
+    .form-group {
+        margin-bottom: 15px;
+    }
+    
+    button {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .term-item-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .term-actions {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .ipa-input-group {
+        flex-direction: column;
+    }
+    
+    .ipa-input-group button {
+        width: 100%;
+    }
+}
+
+/* 动画效果 */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.term-item {
+    animation: fadeIn 0.3s ease-out;
+}
+
+/* 滚动条美化 */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #666;
+}
+
+/* 加载状态 */
+.loading {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+}
+
+.loading::after {
+    content: "...";
+    animation: dots 1.5s steps(4, end) infinite;
+}
+
+@keyframes dots {
+    0%, 20% { content: "."; }
+    40% { content: ".."; }
+    60% { content: "..."; }
+    80%, 100% { content: ""; }
+}
+
+/* 提示消息样式 */
+.info-message {
+    text-align: center;
+    padding: 30px;
+    color: #666;
+    font-style: italic;
+}
+
+/* 表单验证提示 */
+.form-group input:invalid,
+.form-group textarea:invalid {
+    border-color: var(--danger-color);
+}
+
+.validation-message {
+    color: var(--danger-color);
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* 导入相关样式 */
+.category-actions {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.import-section {
+    position: relative;
+}
+
+.import-guide {
+    margin-top: 15px;
+    padding: 10px;
+    background: #f8f8f8;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.import-guide p {
+    color: var(--primary-color);
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.import-guide small {
+    color: #666;
+    word-break: break-all;
+}
+
+/* 导入进度条 */
+.import-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: #f0f0f0;
+    z-index: 1001;
+}
+
+.import-progress-bar {
+    height: 100%;
+    background: var(--primary-color);
+    width: 0;
+    transition: width 0.3s;
+}
+
+/* 导入结果提示 */
+.import-result {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px 20px;
+    border-radius: 4px;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    z-index: 1000;
+    animation: slideIn 0.3s ease-out;
+}
+
+.import-result.success {
+    border-left: 4px solid var(--success-color);
+}
+
+.import-result.error {
+    border-left: 4px solid var(--danger-color);
+}
+
+@keyframes slideIn {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+/* 术语管理操作按钮 */
+.term-actions {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.secondary-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 12px;
+    background: #f5f5f5;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.secondary-btn:hover {
+    background: #e0e0e0;
+}
+
+/* 重复术语对话框 */
+.duplicates-dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    max-width: 600px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.duplicates-dialog h3 {
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.duplicate-group {
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #f8f8f8;
+    border-radius: 4px;
+}
+
+.duplicate-term {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 12px;
+    border-bottom: 1px solid var(--border-color);
+    transition: background-color 0.2s;
+}
+
+.duplicate-term:hover {
+    background-color: #f5f5f5;
+}
+
+.duplicate-term:last-child {
+    border-bottom: none;
+}
+
+.duplicate-term-info {
+    flex: 1;
+}
+
+.term-details {
+    margin-top: 8px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.keep-btn {
+    background: var(--success-color);
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.keep-btn:hover {
+    background: #388E3C;
+    transform: translateY(-1px);
+}
+
+.duplicate-group h4 {
+    padding: 10px;
+    background: #f8f8f8;
+    border-radius: 4px 4px 0 0;
+    margin: 0;
+    color: var(--primary-color);
+}
+
+.dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 999;
+}
+
+.dialog-actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+/* 标签样式 */
+.term-tags {
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.tag {
+    background: var(--primary-color);
+    color: white;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.tag:hover {
+    background: #1976D2;
+    transform: translateY(-1px);
+}
+
+/* 筛选信息样式 */
+.filter-info {
+    background: #f8f8f8;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.clear-filter-btn {
+    background: none;
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    padding: 4px 8px;
+    font-size: 0.9rem;
+}
+
+.clear-filter-btn:hover {
+    background: #e0e0e0;
+}
+
+/* 术语信息布局 */
+.term-info {
+    flex: 1;
+}
+
+.term-item-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+} 
