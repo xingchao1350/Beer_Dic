@@ -869,6 +869,15 @@
           "tags": [
             "USA Hops"
           ]
+        },
+        {
+          "en": "adjuncts",
+          "cn": "辅料",
+          "ipa": "/ædjʌncts/",
+          "tags": [
+            "原料，辅料"
+          ],
+          "description": ""
         }
       ]
     },
@@ -3179,15 +3188,6 @@
           ]
         },
         {
-          "en": "Diacetyl",
-          "cn": "双乙酰",
-          "ipa": "/daɪˈæsɪtaɪl/",
-          "tags": [
-            "defect",
-            "sensory"
-          ]
-        },
-        {
           "en": "DMS",
           "cn": "二甲基硫",
           "ipa": "/diː ɛm ɛs/",
@@ -3313,24 +3313,6 @@
       "cn": "感官评价",
       "terms": [
         {
-          "en": "Estery",
-          "cn": "酯香的",
-          "ipa": "/ˈestəri/",
-          "tags": [
-            "sensory",
-            "flavor"
-          ]
-        },
-        {
-          "en": "Phenolic",
-          "cn": "酚类的",
-          "ipa": "/fəˈnɒlɪk/",
-          "tags": [
-            "sensory",
-            "flavor"
-          ]
-        },
-        {
           "en": "Clean",
           "cn": "纯净的",
           "ipa": "/kliːn/",
@@ -3343,15 +3325,6 @@
           "en": "Herbal",
           "cn": "草本的",
           "ipa": "/ˈhɜːbəl/",
-          "tags": [
-            "sensory",
-            "flavor"
-          ]
-        },
-        {
-          "en": "Earthy",
-          "cn": "土壤气息的",
-          "ipa": "/ˈɜːrθi/",
           "tags": [
             "sensory",
             "flavor"

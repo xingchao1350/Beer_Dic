@@ -33,6 +33,19 @@
                     <div class="char-count">0/5000</div>
                 </div>
                 
+                <div class="file-upload-section">
+                    <div class="upload-area" id="uploadArea">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <p>拖放文件到此处或点击上传</p>
+                        <p class="file-types">支持 .md、.doc、.docx、.pdf 格式</p>
+                        <input type="file" id="fileInput" accept=".md,.doc,.docx,.pdf" hidden>
+                    </div>
+                    <div class="progress-bar" style="display: none;">
+                        <div class="progress"></div>
+                        <div class="progress-text"></div>
+                    </div>
+                </div>
+                
                 <div class="output-section">
                     <div class="result-wrapper">
                         <div id="translationResult" class="translation-result">

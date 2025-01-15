@@ -412,3 +412,75 @@ textarea:focus {
 .close-btn:hover {
     color: #333;
 } 
+
+/* 文件上传区域样式 */
+.file-upload-section {
+    margin-top: 20px;
+    border: 2px dashed var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    transition: all 0.3s ease;
+}
+
+.file-upload-section.drag-over {
+    border-color: var(--primary-color);
+    background: #f0f8ff;
+}
+
+.upload-area {
+    cursor: pointer;
+}
+
+.upload-area i {
+    font-size: 48px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.file-types {
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* 进度条样式 */
+.progress-bar {
+    margin-top: 15px;
+    background: #f5f5f5;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 4px;
+    background: var(--primary-color);
+    width: 0;
+    transition: width 0.3s ease;
+}
+
+.progress-text {
+    margin-top: 5px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* 下载按钮样式 */
+.download-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: var(--success-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.2s;
+}
+
+.download-btn:hover {
+    background: #45a049;
+} 

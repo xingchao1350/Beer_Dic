@@ -65,17 +65,30 @@ async function translate(text) {
                 messages: [
                     {
                         role: "system",
-                        content: `你是一个专业的啤酒术语翻译助手。请将用户输入的文本从${
-                            currentDirection === 'zhToEn' ? '中文翻译成英文' : '英文翻译成中文'
-                        }。注意：
-                        1. 保持专业性和准确性
-                        2. 保留文本中的 {{xxx}} 格式的标记，不要翻译它们
-                        3. 根据英文语法规则正确处理标记中术语的大小写：
-                           - 句首要大写
-                           - 专有名词要大写（如 Pilsner、Munich、Belgian 等）
-                           - 普通术语遵循上下文（如 lager、ale、beer 等）
-                        4. 保持原文的语气和语调
-                        5. 确保输出的是完整的句子`
+                        content: `你是一个专业的啤酒术语翻译助手。请遵循以下翻译守则：
+
+1. 大小写规范：
+- 大写：啤酒风格名称(American, Belgian等)、专有名词(Pilsner等)、评分项目标题
+- 小写：一般性描述词(lager, ale)、工艺术语(fermentation)、感官描述词(estery)、原料通用名词(malt, hop)
+
+2. 句式规范：
+- 使用动词开头的直接表达，如 "Increase cold conditioning time"
+- 避免使用 "It is recommended to..."
+- 使用简洁的表达，如 "Store in cool temperature"
+
+3. 术语标准化：
+- 香气强度：low, medium-low, medium, medium-high, high
+- 口感描述：smooth, crisp, clean, rough
+- 缺陷描述：oxidation, cardboard, lightstruck, phenolic
+- 工艺术语：fermentation, conditioning, aging
+
+4. 翻译要求：
+- 保持专业性：使用标准评审术语
+- 保持一致性：同一概念使用相同术语
+- 保持简洁性：去除冗余词语，使用主动语态
+- 保留文本中的 {{xxx}} 格式的标记，不要翻译它们
+
+请将用户输入的文本从${currentDirection === 'zhToEn' ? '中文翻译成英文' : '英文翻译成中文'}。`
                     },
                     {
                         role: "user",
@@ -104,16 +117,44 @@ async function translate(text) {
     }
 }
 
-// 改进检测专业术语的函数
-function detectTerms(text) {
+// 添加术语大小写处理函数
+function processTermCase(term, position = 'middle') {
+    // 检查是否是需要永远大写的术语
+    const alwaysCapitalized = [
+        'American', 'Belgian', 'German', 'Czech', 'British', 'Irish', 'Scottish',
+        'Pilsner', 'Munich', 'Vienna', 'Saaz', 'Reinheitsgebot'
+    ];
+    
+    if (alwaysCapitalized.includes(term)) {
+        return term;
+    }
+
+    // 检查是否是评分项目标题
+    const scoreItems = ['Aroma', 'Appearance', 'Flavor', 'Mouthfeel', 'Overall Impression'];
+    if (scoreItems.includes(term)) {
+        return term;
+    }
+
+    // 句首位置大写
+    if (position === 'start') {
+        return term.charAt(0).toUpperCase() + term.slice(1).toLowerCase();
+    }
+
+    // 其他情况小写
+    return term.toLowerCase();
+}
+
+// 修改检测术语函数，添加位置信息
+function detectTerms(text, position = 'middle') {
     const terms = new Set();
     const database = currentDirection === 'zhToEn' ? 
         termsDatabase.zhToEn : termsDatabase.enToZh;
     
     database.forEach((term, key) => {
-        // 使用不区分大小写的正则表达式进行匹配
         const regex = new RegExp(key, 'i');
         if (regex.test(text)) {
+            // 处理术语大小写
+            term.en = processTermCase(term.en, position);
             terms.add(term);
         }
     });
@@ -266,7 +307,7 @@ function setupGrammarCheck() {
                     messages: [
                         {
                             role: "system",
-                            content: "你是一个专业的语言校对专家。请检查用户提供的文本，分析其中的语法、用词和表达问题，并给出改进建议。"
+                            content: "你是一个专业的语言校对专家。请检查用户提供的文本，分析其中的语法、用词和表达问题，并给出改进建议,尤其要保证翻译的简洁性。"
                         },
                         {
                             role: "user",
@@ -320,12 +361,261 @@ function formatGrammarResult(result) {
         .replace(/`([^`]+)`/g, '<code>$1</code>');
 }
 
-// 初始化应用
+// 添加文件上传相关的事件监听器
+function setupFileUpload() {
+    const uploadArea = document.getElementById('uploadArea');
+    const fileInput = document.getElementById('fileInput');
+
+    console.log('Setting up file upload...', { uploadArea, fileInput }); // 调试信息
+
+    // 点击上传区域触发文件选择
+    uploadArea.addEventListener('click', (e) => {
+        console.log('Upload area clicked'); // 调试信息
+        fileInput.click();
+    });
+
+    // 处理文件选择
+    fileInput.addEventListener('change', (e) => {
+        console.log('File selected:', e.target.files); // 调试信息
+        const file = e.target.files[0];
+        if (file) {
+            handleFileUpload(file);
+        }
+    });
+
+    // 处理拖放
+    uploadArea.addEventListener('dragover', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        uploadArea.classList.add('drag-over');
+    });
+
+    uploadArea.addEventListener('dragleave', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        uploadArea.classList.remove('drag-over');
+    });
+
+    uploadArea.addEventListener('drop', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        uploadArea.classList.remove('drag-over');
+        
+        const file = e.dataTransfer.files[0];
+        if (file) {
+            handleFileUpload(file);
+        }
+    });
+}
+
+// 添加进度显示函数
+function showProgress(message) {
+    const progressBar = document.querySelector('.progress-bar');
+    const progressText = document.querySelector('.progress-text');
+    
+    progressBar.style.display = 'block';
+    progressText.textContent = message;
+}
+
+// 隐藏进度条
+function hideProgress() {
+    const progressBar = document.querySelector('.progress-bar');
+    progressBar.style.display = 'none';
+}
+
+// 显示错误信息
+function showError(message) {
+    alert(message); // 可以改为更友好的错误提示方式
+}
+
+// 在初始化函数中添加文件上传设置
 async function initializeApp() {
     await loadTermsDatabase();
     setupEventListeners();
     setupGrammarCheck();
+    setupFileUpload();
+}
+
+// 添加文件结构解析函数
+async function parseFileStructure(text, fileType) {
+    const sections = [];
+    
+    switch (fileType) {
+        case 'md':
+            // 处理 Markdown 文件
+            const lines = text.split('\n');
+            let currentSection = { type: 'text', content: '', format: {} };
+            
+            for (const line of lines) {
+                if (line.startsWith('#')) {
+                    if (currentSection.content) {
+                        sections.push(currentSection);
+                    }
+                    currentSection = {
+                        type: 'heading',
+                        level: line.match(/^#+/)[0].length,
+                        content: line.replace(/^#+\s*/, ''),
+                        format: { heading: true }
+                    };
+                } else if (line.match(/^```/)) {
+                    if (currentSection.content) {
+                        sections.push(currentSection);
+                    }
+                    sections.push({
+                        type: 'code',
+                        content: line,
+                        format: { code: true }
+                    });
+                    currentSection = { type: 'text', content: '', format: {} };
+                } else {
+                    currentSection.content += line + '\n';
+                }
+            }
+            if (currentSection.content) {
+                sections.push(currentSection);
+            }
+            break;
+            
+        default:
+            // 对于其他类型的文件，简单按段落分割
+            sections.push({
+                type: 'text',
+                content: text,
+                format: {}
+            });
+    }
+    
+    return sections;
+}
+
+// 添加翻译段落函数
+async function translateSections(sections) {
+    const translatedSections = [];
+    let progress = 0;
+    
+    for (const section of sections) {
+        if (section.type === 'code') {
+            // 代码块直接保留
+            translatedSections.push(section);
+        } else {
+            // 翻译文本内容
+            const translatedContent = await translate(section.content);
+            translatedSections.push({
+                ...section,
+                content: translatedContent
+            });
+        }
+        
+        // 更新进度
+        progress += (1 / sections.length) * 100;
+        showProgress(`翻译进度: ${Math.round(progress)}%`);
+    }
+    
+    return translatedSections;
+}
+
+// 添加文件重建函数
+async function rebuildFile(sections, fileType) {
+    let output = '';
+    
+    switch (fileType) {
+        case 'md':
+            // 重建 Markdown 文件
+            sections.forEach(section => {
+                if (section.type === 'heading') {
+                    output += '#'.repeat(section.level) + ' ' + section.content + '\n\n';
+                } else if (section.type === 'code') {
+                    output += section.content + '\n';
+                } else {
+                    output += section.content + '\n';
+                }
+            });
+            break;
+            
+        default:
+            // 对于其他类型的文件，简单连接内容
+            output = sections.map(section => section.content).join('\n\n');
+    }
+    
+    return output;
+}
+
+// 修改文件上传处理函数
+async function handleFileUpload(file) {
+    console.log('Handling file upload:', file);
+    try {
+        const formData = new FormData();
+        formData.append('file', file);
+
+        showProgress('正在上传文件...');
+
+        const response = await fetch('/api/upload', {
+            method: 'POST',
+            body: formData
+        });
+
+        const data = await response.json();
+        if (!data.success) {
+            throw new Error(data.error || '上传失败');
+        }
+
+        showProgress('正在分析文件结构...');
+        const sections = await parseFileStructure(data.text, file.name.split('.').pop().toLowerCase());
+        
+        // 开始翻译
+        const translatedSections = await translateSections(sections);
+        
+        // 重建文件
+        const outputFile = await rebuildFile(translatedSections, file.name.split('.').pop().toLowerCase());
+        
+        // 导出文件
+        await exportFile(outputFile, file.name);
+        
+    } catch (error) {
+        console.error('文件处理错误:', error);
+        showError(`文件处理失败: ${error.message}`);
+    } finally {
+        hideProgress();
+    }
+}
+
+// 添加文件导出函数
+async function exportFile(content, originalName) {
+    try {
+        const response = await fetch('/api/export', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                content,
+                format: originalName.split('.').pop().toLowerCase(),
+                originalName
+            })
+        });
+
+        if (!response.ok) {
+            throw new Error('导出失败');
+        }
+
+        // 处理文件下载
+        const blob = await response.blob();
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `translated_${originalName}`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+
+    } catch (error) {
+        console.error('导出文件错误:', error);
+        showError(`导出失败: ${error.message}`);
+    }
 }
 
 // 启动应用
-initializeApp(); 
+document.addEventListener('DOMContentLoaded', () => {
+    initializeApp();
+}); 
