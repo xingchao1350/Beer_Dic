@@ -204,3 +204,211 @@ textarea:focus {
         text-align: center;
     }
 } 
+
+/* 输出区域工具栏 */
+.output-toolbar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.grammar-check-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 15px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.grammar-check-btn:hover {
+    background: #1976D2;
+}
+
+.grammar-check-btn:disabled {
+    background: #ccc;
+    cursor: wait;
+}
+
+/* 语法检查结果对话框 */
+.grammar-check-dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.grammar-check-content {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.2);
+    width: 90%;
+    max-width: 800px;
+    max-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.dialog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.dialog-header h3 {
+    margin: 0;
+    color: var(--primary-color);
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    padding: 5px;
+    transition: color 0.2s;
+}
+
+.close-btn:hover {
+    color: #333;
+}
+
+.grammar-check-text {
+    padding: 20px;
+    overflow-y: auto;
+    line-height: 1.6;
+    flex: 1;
+    white-space: pre-wrap;
+}
+
+/* 语法检查结果样式 */
+.grammar-issue {
+    color: #f44336;
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+}
+
+.grammar-suggestion {
+    color: #4CAF50;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+/* 添加总体评价样式 */
+.grammar-summary {
+    color: #2196F3;
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+}
+
+/* 添加代码样式 */
+.grammar-check-text code {
+    background: #f5f5f5;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-family: monospace;
+}
+
+/* 动画效果 */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.grammar-check-dialog {
+    animation: fadeIn 0.3s ease;
+} 
+
+/* 语法检查结果区域 */
+.grammar-result-section {
+    margin-top: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: #fff;
+}
+
+.grammar-result-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    border-bottom: 1px solid var(--border-color);
+    background: #f8f9fa;
+    border-radius: 8px 8px 0 0;
+}
+
+.grammar-result-header h3 {
+    margin: 0;
+    color: var(--primary-color);
+    font-size: 1rem;
+}
+
+.grammar-result-content {
+    padding: 15px;
+    max-height: 300px;
+    overflow-y: auto;
+    line-height: 1.6;
+}
+
+/* 语法检查结果样式 */
+.grammar-issue {
+    color: #f44336;
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+}
+
+.grammar-suggestion {
+    color: #4CAF50;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+.grammar-summary {
+    color: #2196F3;
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+/* 代码样式 */
+.grammar-result-content code {
+    background: #f5f5f5;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-family: monospace;
+}
+
+/* 关闭按钮 */
+.close-btn {
+    background: none;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    padding: 5px;
+    transition: color 0.2s;
+}
+
+.close-btn:hover {
+    color: #333;
+} 

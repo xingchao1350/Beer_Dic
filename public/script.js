@@ -607,5 +607,109 @@ function findTermByEn(termEn) {
     return null;
 }
 
+// 添加清空、校验和复制功能
+function addTranslationControls() {
+    const controlsContainer = document.createElement('div');
+    controlsContainer.className = 'translation-controls';
+    controlsContainer.innerHTML = `
+        <button id="clearBtn" class="control-btn">
+            <i class="fas fa-eraser"></i> 清空输入
+        </button>
+        <button id="verifyBtn" class="control-btn">
+            <i class="fas fa-check-double"></i> 语法校验
+        </button>
+        <button id="copyBtn" class="control-btn">
+            <i class="fas fa-copy"></i> 复制内容
+        </button>
+    `;
+
+    // 插入到翻译结果区域之前
+    const translationResult = document.querySelector('.translation-result');
+    translationResult.parentNode.insertBefore(controlsContainer, translationResult);
+
+    // 清空按钮功能
+    document.getElementById('clearBtn').addEventListener('click', () => {
+        document.getElementById('inputText').value = '';
+        document.querySelector('.translation-result').innerHTML = '';
+    });
+
+    // 语法校验按钮功能
+    document.getElementById('verifyBtn').addEventListener('click', async () => {
+        const translatedText = document.querySelector('.translation-result').textContent;
+        if (!translatedText.trim()) {
+            alert('请先进行翻译');
+            return;
+        }
+
+        try {
+            const response = await fetch('https://api.deepseek.com/v1/chat/completions', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${DEEPSEEK_API_KEY}`
+                },
+                body: JSON.stringify({
+                    model: "deepseek-chat",
+                    messages: [{
+                        role: "user",
+                        content: `请检查以下翻译的语法和表达是否准确、地道：\n\n${translatedText}\n\n请指出任何需要改进的地方，并给出建议。`
+                    }]
+                })
+            });
+
+            const data = await response.json();
+            
+            // 显示校验结果
+            showVerificationResult(data.choices[0].message.content);
+        } catch (error) {
+            console.error('语法校验失败:', error);
+            alert('语法校验失败，请稍后重试');
+        }
+    });
+
+    // 复制按钮功能
+    document.getElementById('copyBtn').addEventListener('click', () => {
+        const translatedText = document.querySelector('.translation-result').textContent;
+        if (!translatedText.trim()) {
+            alert('没有可复制的内容');
+            return;
+        }
+
+        navigator.clipboard.writeText(translatedText).then(() => {
+            showCopySuccess();
+        }).catch(err => {
+            console.error('复制失败:', err);
+            alert('复制失败，请手动复制');
+        });
+    });
+}
+
+// 显示校验结果
+function showVerificationResult(result) {
+    const dialog = document.createElement('div');
+    dialog.className = 'verification-dialog';
+    dialog.innerHTML = `
+        <div class="verification-content">
+            <h3>语法校验结果</h3>
+            <div class="verification-text">${result}</div>
+            <button onclick="this.closest('.verification-dialog').remove()">关闭</button>
+        </div>
+    `;
+    document.body.appendChild(dialog);
+}
+
+// 显示复制成功提示
+function showCopySuccess() {
+    const toast = document.createElement('div');
+    toast.className = 'copy-toast';
+    toast.textContent = '复制成功';
+    document.body.appendChild(toast);
+
+    setTimeout(() => {
+        toast.classList.add('fade-out');
+        setTimeout(() => toast.remove(), 300);
+    }, 1500);
+}
+
 // 启动应用
 loadTermsData(); 

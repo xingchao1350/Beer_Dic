@@ -1016,6 +1016,69 @@
           "tags": [
             "process"
           ]
+        },
+        {
+          "en": "Over sparging",
+          "cn": "过度洗糟",
+          "ipa": "/ˈəʊvər ˈspɑːɡɪŋ/",
+          "description": "工艺问题",
+          "tags": [
+            "problem"
+          ]
+        },
+        {
+          "en": "cold conditioning",
+          "cn": "冷沉",
+          "ipa": "/ˈkəʊld ˈkənˈdɪʃənɪŋ/",
+          "description": "工艺",
+          "tags": [
+            "process"
+          ]
+        },
+        {
+          "en": "Racking",
+          "cn": "倒桶",
+          "ipa": "/ˈrækɪŋ/",
+          "description": "工艺",
+          "tags": [
+            "process"
+          ]
+        },
+        {
+          "en": "milling",
+          "cn": "麦芽粉碎",
+          "ipa": "/ˈmɪlɪŋ/",
+          "description": "工艺",
+          "tags": [
+            "process"
+          ]
+        },
+        {
+          "en": "wort",
+          "cn": "麦汁",
+          "ipa": "/wɜːrt/",
+          "description": "工艺",
+          "tags": [
+            "process"
+          ]
+        },
+        {
+          "en": "whirlpool",
+          "cn": "漩沉",
+          "ipa": "/ˈwɜːrlpəʊl/",
+          "description": "工艺",
+          "tags": [
+            "process"
+          ]
+        },
+        {
+          "en": "pitching",
+          "cn": "酵母接种",
+          "ipa": "/ˈpɪtʃɪŋ/",
+          "description": "工艺",
+          "tags": [
+            "process"
+          ]
         }
       ]
     },
@@ -1081,24 +1144,26 @@
           ]
         },
         {
-          "en": "Aroma",
+          "en": "aroma",
           "cn": "香气",
           "ipa": "/əˈroʊmə/",
           "tags": [
             "sensory",
             "evaluation",
             "flavor"
-          ]
+          ],
+          "description": ""
         },
         {
-          "en": "Mouthfeel",
+          "en": "mouthfeel",
           "cn": "口感",
           "ipa": "/ˈmaʊθfiːl/",
           "tags": [
             "sensory",
             "evaluation",
             "texture"
-          ]
+          ],
+          "description": ""
         },
         {
           "en": "American Light Lager",
@@ -2249,6 +2314,618 @@
             "BJCP"
           ],
           "description": "BJCP啤酒风格"
+        },
+        {
+          "en": "Acetaldehyde",
+          "cn": "乙醛",
+          "ipa": "/əˌsɪtˈældɪhaɪd/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "Alcoholic",
+          "cn": "酒精味",
+          "ipa": "/ˌælkəˈhɒlɪk/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "astringent",
+          "cn": "涩味",
+          "ipa": "/əˈstrɪndʒənt/",
+          "tags": [
+            "flavor"
+          ],
+          "description": "品鉴"
+        },
+        {
+          "en": "bitter",
+          "cn": "苦味",
+          "ipa": "/ˈbɪtər/",
+          "tags": [
+            "flavor"
+          ],
+          "description": "品鉴"
+        },
+        {
+          "en": "Butyric",
+          "cn": "丁酸味",
+          "ipa": "/bjuːˈtɪrɪk/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "Caprylic",
+          "cn": "辛酸味",
+          "ipa": "/kəˈprɪlɪk/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "Diacetyl",
+          "cn": "双乙酰",
+          "ipa": "/daɪˈæsɪtɪl/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "DMS (dimethyl sulfide)",
+          "cn": "二甲基硫醚",
+          "ipa": "/ˌdiː em ˈes/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "Earthy",
+          "cn": "泥土味",
+          "ipa": "/ˈɜːrθi/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "estery",
+          "cn": "酯香",
+          "ipa": "/ˈestəri/",
+          "tags": [
+            "flavor"
+          ],
+          "description": "品鉴"
+        },
+        {
+          "en": "Ethyl Acetate",
+          "cn": "乙酸乙酯",
+          "ipa": "/ˈeθɪl ˈæsɪteɪt/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "Ethyl Hexanoate",
+          "cn": "乙基己酸酯",
+          "ipa": "/ˈeθɪl hekˈsænəʊeɪt/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "Geraniol",
+          "cn": "香叶醇",
+          "ipa": "/dʒəˈreɪniɒl/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "Grainy",
+          "cn": "谷物味",
+          "ipa": "/ˈɡreɪni/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "Grassy",
+          "cn": "青草味",
+          "ipa": "/ˈɡrɑːsi/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "hefeweizen",
+          "cn": "小麦啤酒",
+          "ipa": "/ˈheɪfəvaɪtsən/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "Indole",
+          "cn": "吲哚味",
+          "ipa": "/ˈɪndəʊl/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "Infection",
+          "cn": "感染味",
+          "ipa": "/ɪnˈfekʃən/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "Isoamyl",
+          "cn": "异戊基",
+          "ipa": "/ˌaɪsəʊˈæmɪl/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "Isovaleric",
+          "cn": "异戊酸味",
+          "ipa": "/ˌaɪsəʊvəˈlerɪk/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "Lactic",
+          "cn": "乳酸味",
+          "ipa": "/ˈlæktɪk/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "Light-Struck",
+          "cn": "日光味",
+          "ipa": "/laɪt strʌk/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "Mercaptan",
+          "cn": "硫醇味",
+          "ipa": "/mɜːˈkæptæn/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "Metallic",
+          "cn": "金属味",
+          "ipa": "/mɪˈtælɪk/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "Musty",
+          "cn": "霉味",
+          "ipa": "/ˈmʌsti/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "oxidized",
+          "cn": "氧化味",
+          "ipa": "/ˈɒksɪdaɪzd/",
+          "tags": [
+            "flavor"
+          ],
+          "description": "品鉴"
+        },
+        {
+          "en": "Papery",
+          "cn": "纸味",
+          "ipa": "/ˈpeɪpəri/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "Phenolic",
+          "cn": "酚类味",
+          "ipa": "/fɪˈnɒlɪk/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "Solvent",
+          "cn": "溶剂味",
+          "ipa": "/ˈsɒlvənt/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "Sour/Acidic",
+          "cn": "酸味",
+          "ipa": "/ˈsaʊər/ˈæsɪdɪk/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "Spicy",
+          "cn": "香料味",
+          "ipa": "/ˈspaɪsi/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "Sulfur",
+          "cn": "硫磺味",
+          "ipa": "/ˈsʌlfər/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "Vanilla",
+          "cn": "香草味",
+          "ipa": "/vəˈnɪlə/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "Vegetal",
+          "cn": "蔬菜味",
+          "ipa": "/ˈvedʒtəl/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "Yeasty",
+          "cn": "酵母味",
+          "ipa": "/ˈjiːsti/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "Nuttiness",
+          "cn": "坚果味",
+          "ipa": "/ˈnʌtɪnəs/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "Acetic",
+          "cn": "醋酸味",
+          "ipa": "/əˈsiːtɪk/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "Cardboard",
+          "cn": "纸板味",
+          "ipa": "/ˈkɑːdˌbɔːrd/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "wet paper",
+          "cn": "湿纸味",
+          "ipa": "/ˈwet ˈpeɪpər/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "rotten pineapple",
+          "cn": "腐烂菠萝味",
+          "ipa": "/ˈrɒtən ˈpɪnəpple/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "wet cardboard",
+          "cn": "湿纸板味",
+          "ipa": "/ˈwet ˈkɑːdˌbɔːrd/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "sanitation issues",
+          "cn": "卫生问题",
+          "ipa": "/ˈsænɪˈteɪʃən ˈɪʃuːz/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "chlorophenols in water",
+          "cn": "氯苯酚水味",
+          "ipa": "/ˈklɔːrəʊˈfɛnəlz ɪn ˈwɔːtər/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "Chlorine sanitizers",
+          "cn": "氯化消毒剂",
+          "ipa": "/ˈklɔːrɪn ˈsænɪˈteɪzəz/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "Phenylethyl Acetate",
+          "cn": "苯乙酸乙酯",
+          "ipa": "/ˈfɛnɪl ˈeθɪl ˈæsɪteɪt/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "Isoamyl acetate",
+          "cn": "乙酸异戊酯",
+          "ipa": "/ˈaɪsəʊˈæmɪl ˈæsɪteɪt/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "Low levels",
+          "cn": "低水平的",
+          "ipa": "/ˈləʊv ˈlɛvəlz/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "Medium levels",
+          "cn": "中等的",
+          "ipa": "/ˈmiːdɪəm ˈlɛvəlz/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "High levels",
+          "cn": "高的",
+          "ipa": "/ˈhaɪ ˈlɛvəlz/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "body",
+          "cn": "酒体",
+          "ipa": "/ˈbɒdi/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "hazy",
+          "cn": "浑浊的",
+          "ipa": "/ˈhæzi/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "malt",
+          "cn": "麦芽香味",
+          "ipa": "/ˈmɔːlt/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "high carbonation",
+          "cn": "高碳化水平/ˈhaɪ ˈkɑːbənəˈʃən ˈlɛvəl/",
+          "ipa": "",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "bread dough malt flavor",
+          "cn": "生面团味",
+          "ipa": "/ˈbreɪd ˈdʌf ˈmɔːlt ˈfleɪvər/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "high fermentation",
+          "cn": "高发酵度",
+          "ipa": "/ˈhaɪ ˈfɜːrɪˈmeɪʃən/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "alcohol warmth",
+          "cn": "酒精温热感",
+          "ipa": "/ˈælkəhɒl ˈwɔːrmθ/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "dry",
+          "cn": "干爽的",
+          "ipa": "/ˈdraɪ/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "crisp",
+          "cn": "清脆的",
+          "ipa": "/ˈkrɪsp/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "pale-color",
+          "cn": "淡色",
+          "ipa": "/ˈpeɪl/",
+          "description": "品鉴",
+          "tags": [
+            "color"
+          ]
+        },
+        {
+          "en": "amber-color",
+          "cn": "琥珀色",
+          "ipa": "/ˈæmbər/",
+          "description": "品鉴",
+          "tags": [
+            "color"
+          ]
+        },
+        {
+          "en": "straw to gold",
+          "cn": "稻草色到金色",
+          "ipa": "/ˈstrɔː ˈtəʊ ˈɡəʊld/",
+          "description": "品鉴",
+          "tags": [
+            "color"
+          ]
+        },
+        {
+          "en": "amber to copper-brown",
+          "cn": "琥珀色到铜棕色",
+          "ipa": "/ˈæmbər ˈtəʊ ˈkʌpər ˈbrəʊn/",
+          "description": "品鉴",
+          "tags": [
+            "color"
+          ]
+        },
+        {
+          "en": "dark-color",
+          "cn": "深色",
+          "ipa": "/ˈdɑːk/",
+          "description": "品鉴",
+          "tags": [
+            "color"
+          ]
+        },
+        {
+          "en": "dark brown to black",
+          "cn": "深棕色到黑色",
+          "ipa": "/ˈdɑːk ˈbrəʊn ˈtəʊ ˈblæk/",
+          "description": "品鉴",
+          "tags": [
+            "color"
+          ]
+        },
+        {
+          "en": "balanced",
+          "cn": "平衡的",
+          "ipa": "/ˈbæləns/",
+          "description": "品鉴",
+          "tags": [
+            "balance"
+          ]
+        },
+        {
+          "en": "hoppy",
+          "cn": "啤酒花味",
+          "ipa": "/ˈhɒpɪ/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "roasty",
+          "cn": "烘烤味",
+          "ipa": "/ˈrəʊsti/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
+        },
+        {
+          "en": "sweet",
+          "cn": "甜味",
+          "ipa": "/swiːt/",
+          "description": "品鉴",
+          "tags": [
+            "flavor"
+          ]
         }
       ]
     },
